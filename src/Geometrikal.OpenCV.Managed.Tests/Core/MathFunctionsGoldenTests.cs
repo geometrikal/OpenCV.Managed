@@ -56,7 +56,7 @@ public sealed class MathFunctionsGoldenTests
             byte[] expected = Convert.FromBase64String(c.Outputs[k].Data);
             if (!expected.AsSpan().SequenceEqual(actual[k]))
             {
-                if (UsesRsqrtEstimate(c) && !RsqrtMatchesGolden && WithinUlps(expected, actual[k], MaxRsqrtUlps))
+                if (UsesRsqrtEstimate(c) && !RsqrtMatchesGolden && WithinRelativeError(expected, actual[k], MaxRsqrtRelativeError))
                 {
                     continue;
                 }
@@ -116,8 +116,8 @@ public sealed class MathFunctionsGoldenTests
     // The goldens come from an Intel CPU, and AMD CPUs implement the RSQRTSS estimate table differently.
     private static readonly bool RsqrtMatchesGolden = !X86Base.IsSupported || IsIntel();
 
-    // One Newton step after a different RSQRTSS estimate moves the float32 result by at most a few units in the last place.
-    private const int MaxRsqrtUlps = 2;
+    // RSQRTSS has relative error up to 1.5 * 2^-12, so after one Newton step two vendors can differ by about 5e-7 relative.
+    private const float MaxRsqrtRelativeError = 1e-6f;
 
     private static bool UsesRsqrtEstimate(GoldenCase c) =>
         c.Op == "pow" && c.Inputs[0]?.Dtype == "f32" && c.Params["power"].GetDouble() == -0.5;
@@ -129,13 +129,14 @@ public sealed class MathFunctionsGoldenTests
         return System.Text.Encoding.ASCII.GetString(MemoryMarshal.AsBytes(vendor)) == "GenuineIntel";
     }
 
-    private static bool WithinUlps(byte[] expected, byte[] actual, int maxUlps)
+    private static bool WithinRelativeError(byte[] expected, byte[] actual, float maxRelativeError)
     {
-        ReadOnlySpan<int> e = MemoryMarshal.Cast<byte, int>(expected);
-        ReadOnlySpan<int> a = MemoryMarshal.Cast<byte, int>(actual);
+        ReadOnlySpan<float> e = MemoryMarshal.Cast<byte, float>(expected);
+        ReadOnlySpan<float> a = MemoryMarshal.Cast<byte, float>(actual);
         for (int i = 0; i < e.Length; i++)
         {
-            if (Math.Abs((long)e[i] - a[i]) > maxUlps)
+            bool same = e[i].Equals(a[i]) || Math.Abs(e[i] - a[i]) <= maxRelativeError * Math.Abs(e[i]);
+            if (!same)
             {
                 return false;
             }
