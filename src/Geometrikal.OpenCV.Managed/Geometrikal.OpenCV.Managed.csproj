@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Geometrikal.OpenCV.Managed</PackageId>
+    <Version>0.1.0</Version>
+    <Title>Geometrikal.OpenCV.Managed</Title>
+    <Description>Managed C# ports of OpenCV algorithms (core operations, image processing, features, calibration, stitching and optical flow) on a stride-aware Mat&lt;T&gt; over managed arrays. The library has no native binaries and no package dependencies.</Description>
+    <PackageTags>opencv;computer-vision;image-processing;imaging;managed;stitching;features;contours</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591;CS1573</NoWarn>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Geometrikal.OpenCV.Managed.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\NOTICE" Pack="true" PackagePath="\" />
+    <None Include="..\..\THIRD-PARTY-NOTICES.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\licenses\OpenCV-COPYRIGHT" Pack="true" PackagePath="licenses\" />
+  </ItemGroup>
+
+</Project>

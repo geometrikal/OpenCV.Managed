@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="tools\**" />
+    <None Remove="tools\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Geometrikal.OpenCV.Managed\Geometrikal.OpenCV.Managed.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="TestData\contours_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\drawing_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\drawing_aa_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\morphology_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\filters_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\core_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\color_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\threshold_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\geometry_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\cc_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\dft_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\edge_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\distance_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\advfilter_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\histogram_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\shapes_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\floodfill_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\shapefit_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\linalg_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\pyramid_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\orb_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\sift_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\matcher_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\corners_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\lk_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\estimation_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\epipolar_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\undistort_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\pnp_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\alignment_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\stitch_warp_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\seam_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\stitch_reg_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\hough_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\polar_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\accumulate_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\demosaic_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\precorner_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\inpaint_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\intersection_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\nlmeans_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\divspectrums_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\blend_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\mathfuncs_golden.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="TestData\regression_hashes.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

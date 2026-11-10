@@ -1,0 +1,4685 @@
+{
+ "cases": [
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "Y1wODg4BAQEUJSUlShQUFDkVDg4OAQEBFCUlJUoUDg45FRUVMgEBATolJSUyFA4OERERFQ0NDQgICDQyMhQODhERBwcHDQ0ICAgxAQEBFBQDAwMHBw0NCAgIMQEBAQ4OAwMDBwciIicrMTEBAQEODgMDAygoDg4OK0AICAgNDg4+Pj4oKA4ODiAEBAQIFxcbPj4LCwsODg4gBAQECCgbGyIiCwsLICAAAAAEBCQoGhoiDgsLCyAgAAAABCQkMxoaIg4ODikpHAAAAAQzMzMaGkEODg4pKRsbDAwMHR0dGxtBLCwsPYUbGwwMDB0dHQICQSwsLD2FGxsaGhodHR0CAg==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_rect3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "s7Ozl5W8vOvr69bW1srKoMvL/Pz869rr/v7////bz8/Ly/z8/Ovz8/7+////28/Py8v8/Pzx+fn+/v///9vPz8b8/Py98fn5+fj45P39/bvG/Pz83PH5+fnJ4+P9/f27zfz8/Pv42dns7Ozj/f392Pv7+/v7+NnZ7Ozs4+Pr6+v7+/v7+/jU1Ozs7On5+fnr+/vy8vKi9vb21+np+fn569ra8vLyzfb29tn2/v7++dXa2uLi4s329vbm9v7+/vzV5OTm7Ozszc2y5vb+/v78g+Tk5uz09PTMsubw8Pz8/IP5+fbs9PT04IC9vb3y8vLo+fn25vT09OCAvb29zOjo6A==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_rect3",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "YzkVDmo0ARQ6eSWBSrsUDmM5FQ4yNAEUOnklgTKGFA5jERUOMg0BFAhZJYEyWxQOYxEVBzINAVAIMSWBAVsUDmkDFQcyDTArCDE0gQFbFA5pAzUHMg0nKwgxNG4BFxQOaQM1BygNDisIMTQIARcvDmkDNQcoIg4rIDEECAEXKA5pAzULKCAOKyA9BAgNFygOhiJHCyggDiwABAQINBcoGoYiDgsoIA4sAAQECDOAKBqGIg4LKSAvHAAEBCQzjSgaQSIOCykgLxsABCskHY1KGkEiDj0pe4UbAAQrRh2NSgJBqQ49KXuFGxsMK0YdvUoCQaksPbiOhRsbDCtGHb1KAg==",
+   "kernelRows": [
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_col5",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "y7OX/OtYvNrr/tL/28rPoMu9rvzra7zz6/7S/9vKz6DLva7862vx+ev+0v/bys+7y738/Otr8fnr/qn/2/3Pu8u9/PzrkfH5o/69/9v9z7vHzfz7+L3x+c/4veRT/ZnY+838+/i98fnP7L3jV/3r2PvN/Pv4vdnUz+y96eb969j7zdb7+L3Z9s/s1+nm+evY+83W+/i9zfbP7Nn2/vnr2PvOwPKhrs32lnrm9v7869Xd5MDy7K7N9pZ65vb+/GfV3eTA5uz0zfaWa+b2/vxn1fn2wObs9OCyeGvm9v786IP59pbm7PTgsnhr5vC6/OiD+faW5uz04IB4a714uvLofw==",
+   "kernelRows": [
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_col5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "XA4ODg4OFBQUFEpKSkpKV2NjYzQBAQEBASUlJRQUFBQVFRUVFTAwMDA6OqmpDg4Orq4yMjIyMjY2PzIyFBQUFBEREQ0NDQgICAgINDRTU1urBwcHBwciIjExAQEBAQE1AwMDAzUrKysrKw0NDQ0NDsfHx70nJycnJ1E0FxcXFxd7eygoDg4ODg4ICAgICFeAPj4+PlBQICAEBAQEBBsbG0cLCwsLCyAgLyQkJCQkYmciIiIiZGQAAAAAAARmGhoaDg4ODg4pKT4+PjMzMzMzX5aWlo6OHBwMDAwMDEYbGxssLCwsLBsbGxsbGx0dHR1KW1tbW1uAeBoaGhoacwICAg==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_row5",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "s7Ozs7y8vLzS1tbW1tbKypeXl5eXlevr6+vrv7+/v7vL/Pz8/Pzr/v7//////9vPvb29vb3z8/j4+Pj45OSGhqampoPx+fn5+fmBgYG7u7v8/Pz8/M3Nzc2jo/39/f39adzc3Nzc2dnZ4+Pj4+NeXtb7+/v7+/js7Ozs7JnY2Nj7+/vs7OycnFhYWIDr6+vr1/Ly8vLyoqKi6en5+fn5+cjIyMih9vb29vbX19fV1dXa4uLi4uLNzdn2/v7+/v6Nzs7OzszMzMzm8PD8/Pz8/OTm7Ozs7Oyqqp+68vLy8vKpqbj09PT09IVra729vb29+fn59ubm5uDgvb3M6Ojo6A==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_row5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "XA4ODgEBAQEBFCUlFBQUDhUODg4BAQEBARQlJRQODg4VERUOAQEBAQElJSUUDg4OERERBw0NAQgICAgyAQ4ODhEDBwcHBwgICAgBAQEBAQ4DAwMDBwcICAgIAQEBAQEOAwMDAwcHDiIIKwEBAQEBDgMDAwMODg4ODggECAEIDQ4+AygLDg4ODgQEBAQECBcOPgsLCwsLDg4ABAQEBAgbGiILCwsLCwAAAAAABAQaGhoOCwsLCwsAAAAAAAQkGhoaDg4OCw4cAAAAAAAEHRoaGg4ODg4OGxsMAAQMDB0bGwIsLA4sKRsbDAwMDAwdAgICLCwsLCwbGxoaDBoaHQICAg==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "y7Oz/Ou86+vr/uv/29bPysv8/Pz8/Ov+/v//////28/L/Pz8/Pzz/v7//////9vPy/z8/Pz8+f7+///////bz/z8/Pz8+fn5+f74//39/f38/Pz8/Pn5+fn54/39/f39/Pz8/Pz7+Pns7Oz9/f39/fv7/Pv7+/js7Ozs7Ov96+v7+/v7+/v49uzs7Pn5+fn5+/v7+/j29vb29un5/vn5+fvy8vLy9vb29vb+/v7+/vnd5OLy7Pb29vb2/v7+/v785Obs7Oz07Pbm9v7+/v7+/Pn27PT09PT05vDw/P78/Pz5+fn29PT09OC95vLy/PLy+fn59vT09PTgvb3M6PLo6A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "Y1wODg40ARQUZiVKSkoUV2M5FQ40AQEBOiUlJUoUFA45FRUVMjABMDo6JYEyhg4OphEVMjINMDYIPzQyMhQUDhEREQcNDQ0ICAg0NAFTFDVpAwcHBw0iKwgxMQEBAS8OAwMDB5EiJysrMVENAQ0ODmkDNdYoJw4nQFFGCA0XFw67PnsoKA4ODiBABAgIFygbPj4+CyggDiAgBAQEVygbG4YiCwsLICAvAAQEJCRiKBoiIg4LKSAvAAAABCQzZhoaiA4ODikpexwABF8zMzNVGkGWDj0pexwbDAwMRh1VGxtBLCwsPYUbGxsMKx0dHUoCQVssPbi9gBsaGhpTHXMCAg==",
+   "kernelRows": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_cross3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "s7OzgpW8vLzr0tbW1srKoMuzl/zrlbzr6/7S/9vKz6DLy/z8/Ova8/7+////28/Py729/Otr8/n4/vj/5LvPu8a9/L2u8fn5+fiC5IH9u7vG/Pz8vs3x+aPJveP9/f27x838+/jZ2dnP7OPj4/2Z2PvW+/v7+NnU7Ozs426Z69j7++z7+L2i1M/sWOnm+evr+9fy8vKiovaieunp+fn51drIyPKhrvb29tfZ9v751dXa2uLi4s3N9pbZ9v7+/o3V3eTO5uzMzcyy5vD2/vz8g+Tk5uzs9MyyPp/m8PL88oP59qnm9PT0hXhrvXi98uh/+fn25ub04OCAvb29zOjo6A==",
+   "kernelRows": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_cross3",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "FRUVDjAwARQ6eSWBSg4ODmM5FTIyNAE/OoIlMhQUFA4RERUNDQ0ICAg0NFMyWxQOpgcHByINNjEIMQEBATUUNQMDNQc7DSsrCDENDQEODg5pAzUHJyInK1ExNBcBFy8OaQMoKA4ODitACAgIDRcvDj4+UFAohw4gBAQECCgXGxtHCwsLICAOLCAkBAhXZygbIiJHC1AgAAAABAQkYhoaGg4ODgspIC8+AAQzJDNfXxqIIg5ZKRwcDAAERkYzGxsaLCwOPSkbGxsbDB0dHUpKG0FbLD24gHgaGgwrRh0CAgJBqSw9uL2FGxsaK1MdvUoC+fZb2Oa94IB4Gr14c8zoAg==",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_lshape_a00",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "y/z8/Ova2v7+////28/PoMu9vfzr8/P4+P7k/9u7z6DLva788fn5+Vn+qf/bu8+7/Pz8vc3N8fmj+IP9/f2Fu8bc/NzZ2fH5yePj4179hbvW+/z7+NTZ7OzsveOZ/djY++zs+/i92dTP7L3j6+vr2Pvy8vv4vaLUz+zp+fn569j7yKHyofb29tfX1+nm+evV2uLi8s3NzfbZ9v7+/vln1drOwOLMzM325vDw/P78g9Xk5uzs7K7Nsp+f5vb+/GaD3eS49PT0zLJra+bwvfx/g/n25ubs9OCAvb29zOjy6H/59lvY5vTggHhrvXhzzOh/+fZb2Oa94IB4Gr14c8zoAg==",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_lshape_a00",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "Y2NjZ1wOAQEBFCUlJYEUFMs5FRUVDjAwARQ6eSWBSg69vWM5FTIyNAE/OoIlMhQUphERERUNDQ0ICAg0NFMyW8arpgcHByINNjEIMQEBATVpAwMDNQc7DSsrCDENDQEOx8dpAzUHJyInK1ExNBcBF/u7aQMoKA4ODitACAgIDRfXPj4+UFAohw4gBAQECCgXhoZHCwsLICAOLCAkBAhXZ9oiIiJHC1AgAAAABAQkYhqIiA4ODgspIC8+AAQzJDNf3d2IIg5ZKRwcDAAERkYzG0FBLCwOPSkbGxsbDB0dHUr59kFbLD24gHgaGgwrRh0C//9BqSw9uL2FGxsaK1MdvQ==",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_lshape_a21",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "Y2eXs5eVlVfr6+ud0ta/ysvLy/z8/Ova2v7+////28+9vcu9vfzr8/P4+P7k/9u7pqbLva788fn5+Vn+qf/bu8bG/Pz8vc3N8fmj+IP9/f1pacbc/NzZ2fH5yePj4179x83W+/z7+NTZ7OzsveOZ/fv7++zs+/i92dTP7L3j6+vX1/vy8vv4vaLUz+zp+fn5hsj7yKHyofb29tfX1+nm+dra2uLi8s3NzfbZ9v7+/vmIztrOwOLMzM325vDw/P783eTk5uzs7K7Nsp+f5vb+/EGp3eS49PT0zLJra+bwvfz5+fn25ubs9OCAvb29zOjyAAD59lvY5vTggHhrvXhzzA==",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_lshape_a21",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_rect3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "/////////////////////////////wAA/////////////////////////////wAA/////////////////////////////wAA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAP///////////////////wD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8A////////////////////////////////////////////////////////////////////////////////////////////////////",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_rect3",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAA/wAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAP8AAAAAAAAAAAAAAAAAAAD/AAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_col5",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AP///wD/////AP///////wD/AP//AAAA////////////AP//////////AP//AAAA////////////AP//////////////AP//////////////AP////////////////////////////////////////////////////////////////////////////////////////////////////8A/////////////////////////////wD/////////////////AP///////////wD/////////////////AP///////////wD/////////////////AP8A/////////////wD/////////////AP8A/////wD//////wD/////////////AP///////////////wD/////////////AP///////////////wD//////////////////////////////////////////////////////////////////////////////////////////////////////////////////wD///8A/////////////////////////wD///8A/////////wD/AP///////////wD///8A/////////wD/AP///////////wD///8A/////////wD/AP///////////wD/////////////////AP///////////wD/////////////////AP////////8A/wD/////////////////AP//",
+   "kernelRows": [
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ],
+    [
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_col5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAAAAAAAAAAA//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_row5",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AP//////////AP///////wAAAAAAAAAA//////////////////////////////8AAP///////////////////////////wAA//////////////////////////////8A/////////////////////////////////////////wD//////////////////////////////////////////////////////////////////////////////////wAA/////////////////////////////////////////wAAAAAA////////////////////////////////AP////////////////////////////8AAAAA//////////////////8AAAAA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wD///////////////////////////////////////////////////////////////////////////////////8A////////////////////////////////////////////////////////////AAAA/////////////////////////wD//////////////////////wAA//////////8A////////////////////////////////",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_row5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "//////////////////////////////8A//////////////////////////////8A////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_cross3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AP//////////AP//////AAD/AP//AAAA/////////////////////////////wAA////////////////////////////AAAA////////////AP///////////////////////////////////////////////////////////////////////////////////////////////////wD///////8A////////////////////////////////AP8A//////////////////////////////////8A/////wD/////////////////////////AP////////8AAAD/////////////////AAD//////wD///8A//////////////////8A////AP//////////////////////////////////////////////////////AP///////////////////////////////////////////////////////////////////wD/////////////////////////////////////////////////AP///////////////////////////////////////wD/////////AP////////////////////////////////////////8AAP///////////////////////////wD//////////////////////////////////////////////wD/////////////////////",
+   "kernelRows": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_cross3",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP8AAAAAAAAAAAAAAAAAAAAAAAD/AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_lshape_a00",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AP//////////AP///////wD/////AAAA////////////////////////////AAAA////////////AAD/////////////////////////////////AP//////////////////////////////AP////////////////////////////////////////8A//8A/////////////////wAA//////////8A/////////wD///////////////////////8AAP////////////////////////////8AAP///////wAAAAD/////////////////AAAA//////////8A//////////////////8A////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAD///////////////8A/////////wD///////////////////8A/////////wD/AP8A/////////////////////////wD//////////////wD///8A////////////AP////////8A//////////////////////////8A//8A/wAA////AP///wD/////AP8AAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_lshape_a00",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAA//8AAAAAAP8AAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAA/wAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAA/wAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8A/wAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAD//////wAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAA/wAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAA/wAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_lshape_a21",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AP////////////////////////////8AAAAA//////////8A////////AP////8A//////////////////////////////8AAP////////////8AAP//////////////AP////////////////8A//////////////////////////////8A/////////////////////////////////////////wD/////////////////////AAD/////////////////////AP//////////////////AP///wAA////////////////////////AP///wAA////////AAAAAP//////////AP////8AAAD//////////wD/////////AP///////wD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AP////////////////////////////8AAP///////////////wD/////////AP///////////////////wD/////////AP8A////////////////////////////AP//////////////AP///wD///////////8AAP///////wD/////////////////////AAD//wD//wD/AAD///8A////AP////8A",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_lshape_a21",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZsXHmog9pOAy6auXzjp1n1/X6LNwPfC5Mwv9JoGCcGRwt1C6cAGB2zVW5N/ggJJ9gTSr2Z/Fn/ZDtsq3epD+JRdEc2HF1Yr+749gyHu6Rc9cApP7uqOSWcL+kpNfxjPooKd/JlFngArbuNixlp7dKWIG+49Zb/jzO3ABgC/9i8Qkn/r2COhiki/PgpOXNXegl3NKcMejpWdT/eJv/dhimFyRf21RwTWiz7yo46BDII0UL5P3f4eGwpB/IK/LunLVdhXtnSXlbDK1Bxoa4RQdYBtuv+DE+zwvkgMivzD/EKvbndwtdAVie+gkF1zwLbReYrvgc7781J/WoP9CfxEY6Q==",
+   "expected": "BwcHBwcHBwcHBwcHBwcHBwdQUFABAQEyCwsLJiY6OgcHNDRQAQEBMwsLCyYmcCUHBxc0UAEBATU1NVZgekUlBwICAmFhillDQ0NgX18zJQcCAgImJlEKCgpgYF9fMykHAgICJiZRCgoKAQEBLy8pBwYGBggICAoKCgEBAS8vKQcGBgYICAhiLy8BAQEvLzUHByRKCAgINS8vL29vNSAgBwcUL0pRNTU1UyAgIEMgIAcHFBUlJSUyMgcHBxoUFBQHBxQVJSUlLy8DAwMaFBAQBwcVFSUFBQUvAwMDFxQQEAcHGy0tBQUFLwMDAxcREBAHBwcHBwUFBQcHBwcHBwcHBw==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": [
+    7.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "name": "erode_rand16b_rect3_constant",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "AAAAECAwQFBgcICCgoKCggAAABAgMEBQYHCAgoKCgoIAAAAQIDBAUGBwgJCgsIKCAAAAECAwQFBgcICQoLCCggAAABAgMEBQYHCAkKCwgoIAAAAQIDBAUGBwgJCgsIKCAAAAECAwQFBgcICQoLCCggAAABAgMEBQYHCAkKCwgoIAAAAQIDBAUGBwgJCgsIKCAAAAECAwQFBgcICQoLCCggAAABAgMEBQYHCAkKCwgoIAAAAQIDBAUGBwgJCgsIKCAAAAECAwQFBgcICQoLCCggAAABAgMEBQYHCAkKCwgoIAAAAQIDBAUGBwgIKCgoKCAAAAECAwQFBgcICCgoKCgg==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": [
+    130.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "name": "erode_ramp_ellipse5_constant",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZsXHmog9pOAy6auXzjp1n1/X6LNwPfC5Mwv9JoGCcGRwt1C6cAGB2zVW5N/ggJJ9gTSr2Z/Fn/ZDtsq3epD+JRdEc2HF1Yr+749gyHu6Rc9cApP7uqOSWcL+kpNfxjPooKd/JlFngArbuNixlp7dKWIG+49Zb/jzO3ABgC/9i8Qkn/r2COhiki/PgpOXNXegl3NKcMejpWdT/eJv/dhimFyRf21RwTWiz7yo46BDII0UL5P3f4eGwpB/IK/LunLVdhXtnSXlbDK1Bxoa4RQdYBtuv+DE+zwvkgMivzD/EKvbndwtdAVie+gkF1zwLbReYrvgc7781J/WoP9CfxEY6Q==",
+   "expected": "1+jo6LPw8PDp/f39zs6fn9fo6Oi68PDw6f39/eDgn5/X6Ojo2fD29vb9/f3g/v7+t7fZ2dnV/v7+7+Tk4P7+/oGr+/v71f7+/v7+ysj+/v6np/v7+9X+/v7+/tjI3ejop/v7+/v4+Pj+/v7Y/f396Kf7+/v2+Pj489vY2P39/d2f+/v79vj4+P39/f39/f3En/r6+vbo6M/9/f39/f3YoJeX9/f3x8LP/f39/f392NWR7ff39+Xlz8/P4+Pj4dXVdu339/v7+8LCtb/h////1dvt7e37+/vo6Oi/8P///7Tb4ODg/Pz86Oj////////p2+Dg4Pz8/Ojo////8PDp6Q==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": [
+    7.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "name": "dilate_rand16b_rect3_constant",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "goKCgoKCgpCgsMDQ4PDw8IKCgoKCgoKQoLDA0ODw8PCCgkBQYHCAkKCwwNDg8PDwgoJAUGBwgJCgsMDQ4PDw8IKCQFBgcICQoLDA0ODw8PCCgkBQYHCAkKCwwNDg8PDwgoJAUGBwgJCgsMDQ4PDw8IKCQFBgcICQoLDA0ODw8PCCgkBQYHCAkKCwwNDg8PDwgoJAUGBwgJCgsMDQ4PDw8IKCQFBgcICQoLDA0ODw8PCCgkBQYHCAkKCwwNDg8PDwgoJAUGBwgJCgsMDQ4PDw8IKCQFBgcICQoLDA0ODw8PCCgoKCgoKCkKCwwNDg8PDwgoKCgoKCgpCgsMDQ4PDw8A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": [
+    130.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "name": "dilate_ramp_ellipse5_constant",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZsXHmog9pOAy6auXzjp1n1/X6LNwPfC5Mwv9JoGCcGRwt1C6cAGB2zVW5N/ggJJ9gTSr2Z/Fn/ZDtsq3epD+JRdEc2HF1Yr+749gyHu6Rc9cApP7uqOSWcL+kpNfxjPooKd/JlFngArbuNixlp7dKWIG+49Zb/jzO3ABgC/9i8Qkn/r2COhiki/PgpOXNXegl3NKcMejpWdT/eJv/dhimFyRf21RwTWiz7yo46BDII0UL5P3f4eGwpB/IK/LunLVdhXtnSXlbDK1Bxoa4RQdYBtuv+DE+zwvkgMivzD/EKvbndwtdAVie+gkF1zwLbReYrvgc7781J/WoP9CfxEY6Q==",
+   "expected": "X1+acD09PTILCwsmJjo6ZF9QUFABAQEyCwsLJiY6OmQ0NDRQAQEBMwsLCyYmcCUlFxc0UAEBATU1NVZgekUlJQICAmFhillDQ0NgX18zJSUCAgImJlEKCgpgYF9fMykpAgICJiZRCgoKAQEBLy8pKQYGBggICAoKCgEBAS8vKSkGBgYICAhiLy8BAQEvLzViJCRKCAgINS8vL29vNSAgIBQUL0pRNTU1UyAgIEMgICAUFBUlJSUyMgcHBxoUFBQdFBQVJSUlLy8DAwMaFBAQEBUVFSUFBQUvAwMDFxQQEBAbGy0tBQUFLwMDAxcREBAQYmItLQUFBWIkFxcXERERGA==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 1,
+   "borderValue": null,
+   "name": "erode_rand16b_rect3_replicate",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "AAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 1,
+   "borderValue": null,
+   "name": "erode_ramp_ellipse5_replicate",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZsXHmog9pOAy6auXzjp1n1/X6LNwPfC5Mwv9JoGCcGRwt1C6cAGB2zVW5N/ggJJ9gTSr2Z/Fn/ZDtsq3epD+JRdEc2HF1Yr+749gyHu6Rc9cApP7uqOSWcL+kpNfxjPooKd/JlFngArbuNixlp7dKWIG+49Zb/jzO3ABgC/9i8Qkn/r2COhiki/PgpOXNXegl3NKcMejpWdT/eJv/dhimFyRf21RwTWiz7yo46BDII0UL5P3f4eGwpB/IK/LunLVdhXtnSXlbDK1Bxoa4RQdYBtuv+DE+zwvkgMivzD/EKvbndwtdAVie+gkF1zwLbReYrvgc7781J/WoP9CfxEY6Q==",
+   "expected": "1+jo6LPw8PDp/f39zs6fn9fo6Oi68PDw6f39/eDgn5/X6Ojo2fD29vb9/f3g/v7+t7fZ2dnV/v7+7+Tk4P7+/oGr+/v71f7+/v7+ysj+/v6np/v7+9X+/v7+/tjI3ejop/v7+/v4+Pj+/v7Y/f396Kf7+/v2+Pj489vY2P39/d2f+/v79vj4+P39/f39/f3En/r6+vbo6M/9/f39/f3YoJeX9/f3x8LP/f39/f392NWR7ff39+Xlz8/P4+Pj4dXVdu339/v7+8LCtb/h////1dvt7e37+/vo6Oi/8P///7Tb4ODg/Pz86Oj////////p2+Dg4Pz8/Ojo////8PDp6Q==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 1,
+   "borderValue": null,
+   "name": "dilate_rand16b_rect3_replicate",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "IDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 1,
+   "borderValue": null,
+   "name": "dilate_ramp_ellipse5_replicate",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZsXHmog9pOAy6auXzjp1n1/X6LNwPfC5Mwv9JoGCcGRwt1C6cAGB2zVW5N/ggJJ9gTSr2Z/Fn/ZDtsq3epD+JRdEc2HF1Yr+749gyHu6Rc9cApP7uqOSWcL+kpNfxjPooKd/JlFngArbuNixlp7dKWIG+49Zb/jzO3ABgC/9i8Qkn/r2COhiki/PgpOXNXegl3NKcMejpWdT/eJv/dhimFyRf21RwTWiz7yo46BDII0UL5P3f4eGwpB/IK/LunLVdhXtnSXlbDK1Bxoa4RQdYBtuv+DE+zwvkgMivzD/EKvbndwtdAVie+gkF1zwLbReYrvgc7781J/WoP9CfxEY6Q==",
+   "expected": "X1+acD09PTILCwsmJjo6ZF9QUFABAQEyCwsLJiY6OmQ0NDRQAQEBMwsLCyYmcCUlFxc0UAEBATU1NVZgekUlJQICAmFhillDQ0NgX18zJSUCAgImJlEKCgpgYF9fMykpAgICJiZRCgoKAQEBLy8pKQYGBggICAoKCgEBAS8vKSkGBgYICAhiLy8BAQEvLzViJCRKCAgINS8vL29vNSAgIBQUL0pRNTU1UyAgIEMgICAUFBUlJSUyMgcHBxoUFBQdFBQVJSUlLy8DAwMaFBAQEBUVFSUFBQUvAwMDFxQQEBAbGy0tBQUFLwMDAxcREBAQYmItLQUFBWIkFxcXERERGA==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 2,
+   "borderValue": null,
+   "name": "erode_rand16b_rect3_reflect",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "AAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 2,
+   "borderValue": null,
+   "name": "erode_ramp_ellipse5_reflect",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZsXHmog9pOAy6auXzjp1n1/X6LNwPfC5Mwv9JoGCcGRwt1C6cAGB2zVW5N/ggJJ9gTSr2Z/Fn/ZDtsq3epD+JRdEc2HF1Yr+749gyHu6Rc9cApP7uqOSWcL+kpNfxjPooKd/JlFngArbuNixlp7dKWIG+49Zb/jzO3ABgC/9i8Qkn/r2COhiki/PgpOXNXegl3NKcMejpWdT/eJv/dhimFyRf21RwTWiz7yo46BDII0UL5P3f4eGwpB/IK/LunLVdhXtnSXlbDK1Bxoa4RQdYBtuv+DE+zwvkgMivzD/EKvbndwtdAVie+gkF1zwLbReYrvgc7781J/WoP9CfxEY6Q==",
+   "expected": "1+jo6LPw8PDp/f39zs6fn9fo6Oi68PDw6f39/eDgn5/X6Ojo2fD29vb9/f3g/v7+t7fZ2dnV/v7+7+Tk4P7+/oGr+/v71f7+/v7+ysj+/v6np/v7+9X+/v7+/tjI3ejop/v7+/v4+Pj+/v7Y/f396Kf7+/v2+Pj489vY2P39/d2f+/v79vj4+P39/f39/f3En/r6+vbo6M/9/f39/f3YoJeX9/f3x8LP/f39/f392NWR7ff39+Xlz8/P4+Pj4dXVdu339/v7+8LCtb/h////1dvt7e37+/vo6Oi/8P///7Tb4ODg/Pz86Oj////////p2+Dg4Pz8/Ojo////8PDp6Q==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 2,
+   "borderValue": null,
+   "name": "dilate_rand16b_rect3_reflect",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "IDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 2,
+   "borderValue": null,
+   "name": "dilate_ramp_ellipse5_reflect",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZsXHmog9pOAy6auXzjp1n1/X6LNwPfC5Mwv9JoGCcGRwt1C6cAGB2zVW5N/ggJJ9gTSr2Z/Fn/ZDtsq3epD+JRdEc2HF1Yr+749gyHu6Rc9cApP7uqOSWcL+kpNfxjPooKd/JlFngArbuNixlp7dKWIG+49Zb/jzO3ABgC/9i8Qkn/r2COhiki/PgpOXNXegl3NKcMejpWdT/eJv/dhimFyRf21RwTWiz7yo46BDII0UL5P3f4eGwpB/IK/LunLVdhXtnSXlbDK1Bxoa4RQdYBtuv+DE+zwvkgMivzD/EKvbndwtdAVie+gkF1zwLbReYrvgc7781J/WoP9CfxEY6Q==",
+   "expected": "X1+acD09PTILCwsmJjo6ZF9QUFABAQEyCwsLJiY6OmQ0NDRQAQEBMwsLCyYmcCUlFxc0UAEBATU1NVZgekUlJQICAmFhillDQ0NgX18zJSUCAgImJlEKCgpgYF9fMykpAgICJiZRCgoKAQEBLy8pKQYGBggICAoKCgEBAS8vKSkGBgYICAhiLy8BAQEvLzViJCRKCAgINS8vL29vNSAgIBQUL0pRNTU1UyAgIEMgICAUFBUlJSUyMgcHBxoUFBQdFBQVJSUlLy8DAwMaFBAQEBUVFSUFBQUvAwMDFxQQEBAbGy0tBQUFLwMDAxcREBAQYmItLQUFBWIkFxcXERERGA==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 4,
+   "borderValue": null,
+   "name": "erode_rand16b_rect3_reflect101",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "AAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0AAAABAgMEBQYHCAkKCwwNAAAAAQIDBAUGBwgJCgsMDQAAAAECAwQFBgcICQoLDA0A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 4,
+   "borderValue": null,
+   "name": "erode_ramp_ellipse5_reflect101",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZsXHmog9pOAy6auXzjp1n1/X6LNwPfC5Mwv9JoGCcGRwt1C6cAGB2zVW5N/ggJJ9gTSr2Z/Fn/ZDtsq3epD+JRdEc2HF1Yr+749gyHu6Rc9cApP7uqOSWcL+kpNfxjPooKd/JlFngArbuNixlp7dKWIG+49Zb/jzO3ABgC/9i8Qkn/r2COhiki/PgpOXNXegl3NKcMejpWdT/eJv/dhimFyRf21RwTWiz7yo46BDII0UL5P3f4eGwpB/IK/LunLVdhXtnSXlbDK1Bxoa4RQdYBtuv+DE+zwvkgMivzD/EKvbndwtdAVie+gkF1zwLbReYrvgc7781J/WoP9CfxEY6Q==",
+   "expected": "1+jo6LPw8PDp/f39zs6fn9fo6Oi68PDw6f39/eDgn5/X6Ojo2fD29vb9/f3g/v7+t7fZ2dnV/v7+7+Tk4P7+/oGr+/v71f7+/v7+ysj+/v6np/v7+9X+/v7+/tjI3ejop/v7+/v4+Pj+/v7Y/f396Kf7+/v2+Pj489vY2P39/d2f+/v79vj4+P39/f39/f3En/r6+vbo6M/9/f39/f3YoJeX9/f3x8LP/f39/f392NWR7ff39+Xlz8/P4+Pj4dXVdu339/v7+8LCtb/h////1dvt7e37+/vo6Oi/8P///7Tb4ODg/Pz86Oj////////p2+Dg4Pz8/Ojo////8PDp6Q==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 4,
+   "borderValue": null,
+   "name": "dilate_rand16b_rect3_reflect101",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "IDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8CAwQFBgcICQoLDA0ODw8PAgMEBQYHCAkKCwwNDg8PDwIDBAUGBwgJCgsMDQ4PDw8A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 4,
+   "borderValue": null,
+   "name": "dilate_ramp_ellipse5_reflect101",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "AAAQIDBAUGBwgJCgsMDQ4AAAECAwQFBgcICQoLDA0OAAABAgMEBQYHCAkKCwwNDgAAAQIDBAUGBwgJCgsMDQ4AAAECAwQFBgcICQoLDA0OAAABAgMEBQYHCAkKCwwNDgAAAQIDBAUGBwgJCgsMDQ4AAAECAwQFBgcICQoLDA0OAAABAgMEBQYHCAkKCwwNDgAAAQIDBAUGBwgJCgsMDQ4AAAECAwQFBgcICQoLDA0OAAABAgMEBQYHCAkKCwwNDgAAAQIDBAUGBwgJCgsMDQ4AAAECAwQFBgcICQoLDA0OAAABAgMEBQYHCAkKCwwNDgAAAQIDBAUGBwgJCgsMDQ4A==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_ramp_rect3_defaultborder",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8AAQIDBAUGBwgJCgsMDQ4PAAECAwQFBgcICQoLDA0ODwABAgMEBQYHCAkKCwwNDg8A==",
+   "expected": "ECAwQFBgcICQoLDA0ODw8BAgMEBQYHCAkKCwwNDg8PAQIDBAUGBwgJCgsMDQ4PDwECAwQFBgcICQoLDA0ODw8BAgMEBQYHCAkKCwwNDg8PAQIDBAUGBwgJCgsMDQ4PDwECAwQFBgcICQoLDA0ODw8BAgMEBQYHCAkKCwwNDg8PAQIDBAUGBwgJCgsMDQ4PDwECAwQFBgcICQoLDA0ODw8BAgMEBQYHCAkKCwwNDg8PAQIDBAUGBwgJCgsMDQ4PDwECAwQFBgcICQoLDA0ODw8BAgMEBQYHCAkKCwwNDg8PAQIDBAUGBwgJCgsMDQ4PDwECAwQFBgcICQoLDA0ODw8A==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_ramp_rect3_defaultborder",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 0,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_rect3_it0",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 0,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_lshape_it0",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 2,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_rect3_it2",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 2,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_lshape_it2",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 3,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_rect3_it3",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 3,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_mask24_lshape_it3",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "Y1wODg4BAQEUJSUlShQUFDkVDg4OAQEBFCUlJUoUDg45FRUVMgEBATolJSUyFA4OERERFQ0NDQgICDQyMhQODhERBwcHDQ0ICAgxAQEBFBQDAwMHBw0NCAgIMQEBAQ4OAwMDBwciIicrMTEBAQEODgMDAygoDg4OK0AICAgNDg4+Pj4oKA4ODiAEBAQIFxcbPj4LCwsODg4gBAQECCgbGyIiCwsLICAAAAAEBCQoGhoiDgsLCyAgAAAABCQkMxoaIg4ODikpHAAAAAQzMzMaGkEODg4pKRsbDAwMHR0dGxtBLCwsPYUbGwwMDB0dHQICQSwsLD2FGxsaGhodHR0CAg==",
+   "kernelRows": null,
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_nokernel_it1",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "FQ4ODgEBAQEBFCUlFA4ODhUODg4BAQEBARQlJRQODg4RDg4NAQEBAQEICCUUDg4OEQcHBwEBAQEBCAEBAQEBDgMDAwMHBwgICAgBAQEBAQ4DAwMDBwcICAgIAQEBAQEOAwMDAwcHCAgICAEBAQEBDgMDAwMHBw4OBAQBAQEBAQ4DAwMDCwsODgQEBAQECA0OIgsLCwsLAAAAAAAEBAgXFw4LCwsLCwAAAAAABAQIGhoOCwsLCwsAAAAAAAQEGhoaDgsLCwsLAAAAAAAEHRoaGg4ODg4OGwAAAAAABB0CAgIODg4ODhsbDAwMDAwdAgICLCwsLCwbGwwMDAwMHQICAg==",
+   "kernelRows": null,
+   "anchor": null,
+   "iterations": 2,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand16a_nokernel_it2",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 0,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_rect3_it0",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 0,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_lshape_it0",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "//////////////////////////////8A//////////////////////////////8A////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 2,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_rect3_it2",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAA////////////////////////////////////////////////////////////AP//////////////////////////////AP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AP//////////////////////////////AP//////////////////////////////AP///////wD/////////////////////AP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AP//////////////////////////////AP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AP//////////////////////////////AAD/////////////////////////////AAAA////////AP//////////////////",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 2,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_lshape_it2",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 3,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_rect3_it3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "////////////////////////////////AP//////////////////////////////AP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AP//////////////////////////////AP//////////////////////////////AP//////////////////////////////AP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AP//////////////////////////////AP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AP//////////////////////////////AAD/////////////////////////////AAAA////////////////////////////AAAAAP//////////////////////////",
+   "kernelRows": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "iterations": 3,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_mask24_lshape_it3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "s7Ozl5W8vOvr69bW1srKoMvL/Pz869rr/v7////bz8/Ly/z8/Ovz8/7+////28/Py8v8/Pzx+fn+/v///9vPz8b8/Py98fn5+fj45P39/bvG/Pz83PH5+fnJ4+P9/f27zfz8/Pv42dns7Ozj/f392Pv7+/v7+NnZ7Ozs4+Pr6+v7+/v7+/jU1Ozs7On5+fnr+/vy8vKi9vb21+np+fn569ra8vLyzfb29tn2/v7++dXa2uLi4s329vbm9v7+/vzV5OTm7Ozszc2y5vb+/v78g+Tk5uz09PTMsubw8Pz8/IP5+fbs9PT04IC9vb3y8vLo+fn25vT09OCAvb29zOjo6A==",
+   "kernelRows": null,
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_nokernel_it1",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "y/z8/Pz86/7+///////bz8v8/Pz8/PP+/v//////28/L/Pz8/Pz5/v7//////9vP/Pz8/Pz8+f7+///////9/fz8/Pz8/Pn+/v///////f38/Pz8/Pv5+fn5+P39/f39/Pz8/Pz7+fn5+ez9/f39/fz8/Pz8+/js7Ozs/f39/f37+/v7+/v49vb27Pn5+fn5+/v7+/v7+Pb29v7+/v7++fv7+/Ly9vb29vb+/v7+/vzk8vLy8vb29vb2/v7+/v785Obs9PT29vb29v7+/v7+/Pn5+fb09PT05vb+/v7+/vz5+fn29PT09Obw8Pz8/Pz8+fn59vT09PTgvb3y8vLy8g==",
+   "kernelRows": null,
+   "anchor": null,
+   "iterations": 2,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand16a_nokernel_it2",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u16",
+   "channels": 1,
+   "width": 12,
+   "height": 12,
+   "input": "qcwhAp3p+pD2cgwnjGwRdZ+9XzbiDnp3Jpwto/M/HLC9c/DH3PE98fQg6/K4Mg+Bt03rRu7keCkJkZ2bmMP+X2YNU9GEMUAq3X+wTgIIrK2NhHdhnX7xh0PZkYC9tyTRmJ6v4cBitPvtX863SIqOETA7eN9XXcMji3y6qPmnJAc86OSvqqN7fcWSJgO35T7dLfVX7QqgPXRMh+E4mLzGXjM6A/M61kf2k95cvz4+NZV0o/L87I1thUktapzh8DjD2cioQ/Bq+akC2Xc3Bc8EPgTHNSAuHNYCsMoItmIsE/R5R/B2PGZ6p+kdokmx6lFjPWiQ3Ne4AmCfcOIe5e8M03ccfIPuJ1jsSOlDko2HZEVhrgpFaEa3s0Jdeqrb4xx+",
+   "expected": "IQIhAiEC8z8MJwwnDCf0IPQg4g7iDuIOIQIhAiECeCkMJwwnDCdmDWYNZg3iDuIO60YCCAIIAgh4KXdh/l9mDWYNZg1AKkAq60YCCAIIAgh4Ke1fjhFmDWYNZg3DI8MjsE4CCCQHJAckB+1fjhGOESYDJgMmA8Mji3zAYiQHJAckB+E4jhGOESYDJgMmA8Mji3w+PiQHJAckB+E44ThJLSYDJgMmAzjDqEM+Pj4+Pj53N3c3dzdJLTUgLhzWAtYCqENiLGIsYix3N3c3dzfpHekdLhzWAtYCqENiLGIsYiziHuIe4h53HHccLhzWAtYCPWhiLGIsYiziHuIe4h53HHccdxzuJ+4nPWg9aGRFZEXiHuIe4h53HHccdxzuJ+4n",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_u16_rect3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u16",
+   "channels": 1,
+   "width": 12,
+   "height": 12,
+   "input": "qcwhAp3p+pD2cgwnjGwRdZ+9XzbiDnp3Jpwto/M/HLC9c/DH3PE98fQg6/K4Mg+Bt03rRu7keCkJkZ2bmMP+X2YNU9GEMUAq3X+wTgIIrK2NhHdhnX7xh0PZkYC9tyTRmJ6v4cBitPvtX863SIqOETA7eN9XXcMji3y6qPmnJAc86OSvqqN7fcWSJgO35T7dLfVX7QqgPXRMh+E4mLzGXjM6A/M61kf2k95cvz4+NZV0o/L87I1thUktapzh8DjD2cioQ/Bq+akC2Xc3Bc8EPgTHNSAuHNYCsMoItmIsE/R5R/B2PGZ6p+kdokmx6lFjPWiQ3Ne4AmCfcOIe5e8M03ccfIPuJ1jsSOlDko2HZEVhrgpFaEa3s0Jdeqrb4xx+",
+   "expected": "nemd6Z3pnenc8dzx3PHr8uvy6/Lr8uvynemd6Z3pnenc8dzx3PHr8uvy6/Lr8uvy7uTu5J3ptPvc8dzx3PHr8uvy6/Lr8uvy7uS0+7T7tPu0+7T73PE98Xjf6/K35XjfLfW0+7T7tPu0+7T7POh437flA/O35Uf2LfW0+7T7tPu0+/L8POgD8wPzR/ZH9kf2LfUt9S318vzy/PL88vzy/APzR/ZH9kf2LfUt9S318vzy/PL88vzy/APzR/ZH9kf2LfUT9BP08vzy/PL88vzy/OHwA/Ph8Ef2SOkT9BP0E/QT9PL85e/l7+XvWOzh8FjsSOkT9BP0E/QT9BP05e/l7+XvWOxY7FjsSOlI6UjpE/Tl7+Xv5e/l7+XvWOxY7Fjs",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_u16_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "s16",
+   "channels": 1,
+   "width": 12,
+   "height": 12,
+   "input": "iH7CxJgT4dpL5anwCPLONSdwGCYEfYplukPhvNfjexzOAyWQR7n61ISPr5RZNpEjxfEkIDttr6bMixsjxM/M01AycRQnbCyl3zg9QVyJcsi5ykJ1N4YnrGH3J5haT8zn7HYgBQVl19CSnE9Jp8xbiGA5Ovo6fi97qMYMG2oBLEpY/bTmqTRjcb7Qmo6libtSBtiEeOo+LEI5o/iK8j8eVBY6qbGJHZ+Katm0rZ0OJiaeD1HoY8kBbc0+TGLc5wvmJgHBp9/UDPYtbJqmcITodBAIZ3He/GGbu7K/EVf7bHmicu+DRZXSqZ05xi1J8ujU3yThsz5vm4U7Ak4J3eQk6NyTFcHDtJObX8fjMfFEQ53acr84EEQLupVjkHmJn3Wj",
+   "expected": "4bzhvOG84dolkCWQJZCEj4SPhI+vlJEj4bzhvK+mzIvMi8yLJZCEj4SPhI+vlCyl4bxciVyJXInMizeGN4Y3hoSPhI+vlCylxfFciVyJXInMizeGN4Y3hluIJ5gnmCylqMZciVyJXImSnDeGN4Y3hluIpYmliaWJqMaoxtfQkpz4iviKW4hbiFuIpYmliaWJtK20rbStOaP4iviK+IpjyZqOpYmliaWJwafBp8GnOaP4inCEcIRwhKmxqbGfip+KwafBp8Gn39Tvg++D74NwhNKp3Odhm2GbwafBp5uFm4Xvg++D74NwhNyT3JNhm2Gbu7K7spuFm4Xvg++D74Pck9yT3JOTm5Ob4bPhs5uFm4Wbhd3kC7rck9yT3JOTm5Ob",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_s16_rect3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "s16",
+   "channels": 1,
+   "width": 12,
+   "height": 12,
+   "input": "iH7CxJgT4dpL5anwCPLONSdwGCYEfYplukPhvNfjexzOAyWQR7n61ISPr5RZNpEjxfEkIDttr6bMixsjxM/M01AycRQnbCyl3zg9QVyJcsi5ykJ1N4YnrGH3J5haT8zn7HYgBQVl19CSnE9Jp8xbiGA5Ovo6fi97qMYMG2oBLEpY/bTmqTRjcb7Qmo6libtSBtiEeOo+LEI5o/iK8j8eVBY6qbGJHZ+Katm0rZ0OJiaeD1HoY8kBbc0+TGLc5wvmJgHBp9/UDPYtbJqmcITodBAIZ3He/GGbu7K/EVf7bHmicu+DRZXSqZ05xi1J8ujU3yThsz5vm4U7Ak4J3eQk6NyTFcHDtJObX8fjMfFEQ53acr84EEQLupVjkHmJn3Wj",
+   "expected": "iH6Ifoh+exx7HM41J3AncAR9BH0EfQR9iH6Ifoh+O207bUJ1J3AncAR9BH0EfQR9iH47bTttQnVCdUJ1QnVCdSdwJ2w6fi977Hbsdux2QnVCdUJ1QnVCdTp+On46fjp+7HaEeOx2QnVCdUJ1QnVCdTp+On46fjp+hHiEeIR4hHgFZUJ1Y3FjcTp+On46fjp+hHiEeIR4hHgtbGNxY3HodGNxZ3E6fi97hHiEeIR4bHmicuh06HTodOh06HRncWdx3yRseWx5bHlseWx56HTodOh06HRncWdxPm9seWx5bHlseWx56HTodOh0kHlncWdxPm9seWx5bHlseWx52nKQeZB5kHmQeZB5Pm8+b9pybHnactpy2nKQeZB5kHmQeZB5",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_s16_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "f32",
+   "channels": 1,
+   "width": 12,
+   "height": 12,
+   "input": "S5b2wQB3wUEEtLXCXp2UQkZlvUIYjbtCs7hHQiv3k8JMnE5CTSq+wo0mv8KhHA3C910RwHJTWELkohJCgRwtwUMZNcKM2cZCRDhswcGPG8HsjIbC/dhrQiDyGkJiYl/CLgynwkJmEELLN/dBc2Q1wm1YtEKsk4vCU4dYwUVysUKwb4DBPKTdQVbZo8G7oDTCUJfBQssQkcHBo51CTAlYwieEZcLfi7vCu6ryQZxb0sFJvpFC33SrwAFHu0JflHvCBHOTQglHXULKvFhCzumJQrfRUELa88lBhoCTwlH9usLRVqhC+6O6QdY6bUKPg2zApBOZwvrslcLGcxRCaAVfwYiUb8LwLde/AlGuwn0ng0EmzjjCGgxuQt+1F8KkSw/BDlrDwnAFq8KlAqzBNmSAwGgIoEGBqybCSvwbQogMkEJ64V9CCCe4ws6CecAnB57CLl1Owj+qwkJ1AI/CMLRjvpUMvUHV+CFCNuA+QXcXxMK51ArCgLViQHnapMI0/+7BALi6wpCRqMI67KTB6OmSwnIhWEFukhdCKHhwQjrhb8LJAYXCQSyewtZJ2kE7LiVClF27wiJ8rkIkNrPC+yUEQZc/J0I9Y5RCAkUrQulhcUKacADCL9x7Qj70p8I57Z1CsksYQZXWfULdlBjBbLnlQRv6qECHRTlCF1mnwvLbr8JDUUrCoC6IwqO2lEL5oGDCmli+Qr57AsJBTn7CQMJnQrfu/UFwwri+zykxQYhcL0J4PFnCl4jGQtHqvUJqhfBB",
+   "expected": "S5b2wQS0tcIEtLXCBLS1wkMZNcJDGTXCK/eTwiv3k8JNKr7CjSa/wo0mv8KNJr/CLgynwgS0tcIEtLXCBLS1wqyTi8Ksk4vCK/eTwiv3k8JNKr7CjSa/wo0mv8KNJr/CLgynwi4Mp8JMCVjCJ4Rlwt+Lu8Lfi7vC34u7wuyMhsLsjIbC7IyGwl+Ue8JflHvCLgynwi4Mp8JMCVjCJ4Rlwt+Lu8Lfi7vC34u7wlH9usJR/brCVtmjwV+Ue8JflHvCpBOZwqQTmcL67JXCiJRvwt+Lu8Lfi7vC34u7wlH9usJR/brCJs44wl+Ue8JflHvCDlrDwg5aw8JwBavCiJRvwoiUb8ICUa7CUf26wlH9usJR/brCCCe4wggnuMInB57CDlrDwg5aw8JwBavCdQCPwoiUb8ICUa7CdxfEwncXxMJ3F8TCCCe4wggnuMJ52qTCDlrDwg5aw8JwBavC6OmSwujpksKBqybCdxfEwncXxMJ3F8TCCCe4wggnuMJ52qTClF27wpRdu8IkNrPCJDazwujpksI24D5BdxfEwncXxMJ3F8TCPvSnwj70p8I+9KfClF27wpRdu8IkNrPCJDazwujpksIXWafC8tuvwvLbr8Ly26/CPvSnwj70p8I+9KfClF27wpRdu8IkNrPCJDazwnDCuL4XWafC8tuvwvLbr8Ly26/CPvSnwj70p8I+9KfCvnsCwkFOfsJBTn7CQU5+wnDCuL4XWafC8tuvwvLbr8Ly26/CoC6IwqAuiML5oGDC",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_f32_rect3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "f32",
+   "channels": 1,
+   "width": 12,
+   "height": 12,
+   "input": "S5b2wQB3wUEEtLXCXp2UQkZlvUIYjbtCs7hHQiv3k8JMnE5CTSq+wo0mv8KhHA3C910RwHJTWELkohJCgRwtwUMZNcKM2cZCRDhswcGPG8HsjIbC/dhrQiDyGkJiYl/CLgynwkJmEELLN/dBc2Q1wm1YtEKsk4vCU4dYwUVysUKwb4DBPKTdQVbZo8G7oDTCUJfBQssQkcHBo51CTAlYwieEZcLfi7vCu6ryQZxb0sFJvpFC33SrwAFHu0JflHvCBHOTQglHXULKvFhCzumJQrfRUELa88lBhoCTwlH9usLRVqhC+6O6QdY6bUKPg2zApBOZwvrslcLGcxRCaAVfwYiUb8LwLde/AlGuwn0ng0EmzjjCGgxuQt+1F8KkSw/BDlrDwnAFq8KlAqzBNmSAwGgIoEGBqybCSvwbQogMkEJ64V9CCCe4ws6CecAnB57CLl1Owj+qwkJ1AI/CMLRjvpUMvUHV+CFCNuA+QXcXxMK51ArCgLViQHnapMI0/+7BALi6wpCRqMI67KTB6OmSwnIhWEFukhdCKHhwQjrhb8LJAYXCQSyewtZJ2kE7LiVClF27wiJ8rkIkNrPC+yUEQZc/J0I9Y5RCAkUrQulhcUKacADCL9x7Qj70p8I57Z1CsksYQZXWfULdlBjBbLnlQRv6qECHRTlCF1mnwvLbr8JDUUrCoC6IwqO2lEL5oGDCmli+Qr57AsJBTn7CQMJnQrfu/UFwwri+zykxQYhcL0J4PFnCl4jGQtHqvUJqhfBB",
+   "expected": "clNYQl6dlEJGZb1CjNnGQozZxkKM2cZCjNnGQozZxkL92GtC/dhrQv3Ya0L92GtCUJfBQl6dlEJGZb1CjNnGQozZxkKM2cZCjNnGQozZxkJFcrFCRXKxQgFHu0L92GtCUJfBQlCXwUJQl8FCjNnGQozZxkKM2cZCjNnGQozZxkIBR7tCAUe7QgFHu0IBR7tCUJfBQlCXwUJQl8FCbVi0Qm1YtEKM2cZCbVi0QkVysUIBR7tCAUe7QgFHu0IBR7tCUJfBQlCXwUJQl8FCwaOdQm1YtELO6YlC0VaoQkVysUIBR7tCAUe7QgFHu0IBR7tCUJfBQj+qwkLBo51CzumJQs7piUKIDJBC0VaoQtFWqELRVqhC0VaoQgFHu0IaDG5CP6rCQj+qwkI/qsJCP6rCQrfRUEKIDJBCiAyQQogMkELRVqhCiAyQQhoMbkIaDG5CP6rCQj+qwkI/qsJCP6rCQih4cEI9Y5RCiAyQQogMkEKIDJBCiAyQQnrhX0I57Z1CP6rCQj+qwkI/qsJCP6rCQj1jlEI9Y5RCPWOUQj1jlEIv3HtCOe2dQjntnUI57Z1Cmli+Qj+qwkIifK5CInyuQj1jlEI9Y5RCPWOUQj1jlEKjtpRCl4jGQtHqvUI57Z1Cmli+QppYvkKaWL5CInyuQj1jlEI9Y5RCPWOUQpeIxkKXiMZCl4jGQpeIxkKXiMZCmli+QppYvkKaWL5CldZ9QkDCZ0I9Y5RCh0U5QpeIxkKXiMZCl4jGQpeIxkKXiMZC",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_f32_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "f64",
+   "channels": 1,
+   "width": 12,
+   "height": 12,
+   "input": "TpD1l7YLTsCry0HP1wVCQHOP4kDcY1XAVkZ64aV3V8Bkjf5rUTtIwKSmlIbR5h3Atj+BWONpUkBO5zI3h7dGQCT8E3VJRUhAes+PiHvNLcATwp3dINA+wDWRzrnQyjnAdsAnF+phWEAcuJozmv5WwLRkds4AWlJAqCVnoVx4L0BSwIf0x40owAWmcZqYhkZAeiPDzmZUBcCSWzxE0atSQNC6NN77CFRAbuE/78ZPL8BmLBlZNVFGwDyrGDpWeDJAQqT+NUCeVEBrsDNHDO9MwLIzpZrjlzhAOGPmHeJPOkDgiPKAsU9HQFFmZgLva1LAF/4QfR6VRUD394LDnXNUQGfvi2MOBFDAZ+LWEOQ+SsAwL7Rx25FXQOBMVnH95k/AyZzuEiG4UUDgQyLh+rX4v1hXSG7iRknAhAjIRpmJUkAApVrsveAlwNYK4iswtQdATjlvYUAnPMBxrGFmFZcyQFKabPnk0lDAo0AyFaDINcA4eT5MenhXQKxxRrzIL0jAacs5z+pYP0BgFCVlIntBwH7i+3npWEtAKVhFMNF0UsCcPruZtX1XQB4sRHLzeyLACiH0rhtlSsDSwrzbPVNVwLiT7ksZg1DAYmnByWijD0Bj86H7t0xAwOM1aQO1cVBANz+HGR6lK8AgxaYk6iBJwPbutsTSbTdAwBYoK3+tREDmMoET3aVQwLkGIVp5nlDAkyN3EZsqV8DjivU+5KNHQPc8K1plYUBA/CrSvZhLFMDvnSi6YTVRQDBhFOonkU5Aw/uauSQSMUA/Bv1U32lSQCVNwAt3ak3AsUyJym1nU8AclSryaAZHwCk/O8pJJVbAdPMc84TvGEAGt1KIjdRVQMn+/xVnCFfAZ3rYO/7kUsDY3f/K0R4jwF2wTaiZsVVAUGm1WWdiQsBoR95ZwSb3Pw/eMg7e61bAkjHE/zSVUcDX1T+W3VRYQGKMyfGEQVdAPjGkq8TAWMBRAsXbMJdWQFfTU9nw0jtA9y3gqlplUkDv7EmHoxoiwOyTWCAi9AhARCR403DYAcAWLyeZua9AQEfQtsR2BFLAFahrilaAV8AcqrRV/jRDwF5sv9jTd0RAN7lWN43QTcA+n4fL3ldBQMlb7crffldAQaxuIhJOVMBrufM9nUJBQJqdRUD6fybA3FoFijhoUkB0gueReyRQwDc5xXA5Q0NAX89dLuDnUEDz39bfDztWQBkNOEcmU0JAyKKu3N0U4r8uncVYx5E3QMZfZ9r7cVJAOgxtJHA+LEA5BsuuC3tXwAzReK8kjFVA2cT7g+LzQkBW8wEgvqZBQOoyPVK3bkzA0sSrou/GP0DjYVN2JDo1wEf8beAgPz5AO0hS9ZurU8CKcPv5rZE/QCDth+V++FhAhAWDyuKWVsBGTepd1NtXQMakKvpPnjLAaeLz56SJUkCYiiGCET1MQPEsbxJ3zipAmybdvEzYR0CR0ZDK/+xSQE7H3vkDLDPAL9ftePNLQcDIJvoCZMJAQOxmRCrbyE5Ab0D52386SkC6BneHB8hNQHoSjsBExCnA",
+   "expected": "HLiaM5r+VsAcuJozmv5WwFZGeuGld1fAVkZ64aV3V8BWRnrhpXdXwGSN/mtRO0jApKaUhtHmHcB6I8POZlQFwG7hP+/GTy/AZiwZWTVRRsBmLBlZNVFGwGYsGVk1UUbAHLiaM5r+VsAcuJozmv5WwFZGeuGld1fAVkZ64aV3V8BWRnrhpXdXwFFmZgLva1LAUWZmAu9rUsBn74tjDgRQwGfvi2MOBFDAZ++LYw4EUMDgTFZx/eZPwOBMVnH95k/AHLiaM5r+VsAcuJozmv5WwBy4mjOa/lbAWFdIbuJGScBRZmYC72tSwFFmZgLva1LAUWZmAu9rUsBSmmz55NJQwFKabPnk0lDAUpps+eTSUMDgTFZx/eZPwOBMVnH95k/Aa7AzRwzvTMBrsDNHDO9MwClYRTDRdFLAKVhFMNF0UsApWEUw0XRSwFFmZgLva1LA0sK82z1TVcDSwrzbPVNVwNLCvNs9U1XAUpps+eTSUMDgTFZx/eZPwOBMVnH95k/AIMWmJOogScBYV0hu4kZJwClYRTDRdFLAKVhFMNF0UsApWEUw0XRSwJMjdxGbKlfAkyN3EZsqV8CTI3cRmypXwNLCvNs9U1XAUpps+eTSUMCscUa8yC9IwKxxRrzIL0jAIMWmJOogScAlTcALd2pNwLFMicptZ1PAsUyJym1nU8ApPzvKSSVWwJMjdxGbKlfAkyN3EZsqV8CTI3cRmypXwMn+/xVnCFfAyf7/FWcIV8Bnetg7/uRSwGPzofu3TEDAIMWmJOogScAP3jIO3utWwA/eMg7e61bAD94yDt7rVsApPzvKSSVWwD4xpKvEwFjAPjGkq8TAWMA+MaSrxMBYwMn+/xVnCFfAyf7/FWcIV8Bnetg7/uRSwNjd/8rRHiPAUGm1WWdiQsAP3jIO3utWwBWoa4pWgFfAFahrilaAV8AVqGuKVoBXwD4xpKvEwFjAPjGkq8TAWMA+MaSrxMBYwMn+/xVnCFfAyf7/FWcIV8BBrG4iEk5UwJqdRUD6fybAdILnkXskUMAP3jIO3utWwBWoa4pWgFfAFahrilaAV8AVqGuKVoBXwD4xpKvEwFjAPjGkq8TAWMA+MaSrxMBYwEGsbiISTlTAOQbLrgt7V8A5BsuuC3tXwDkGy64Le1fAdILnkXskUMBH0LbEdgRSwBWoa4pWgFfAFahrilaAV8AVqGuKVoBXwDtIUvWbq1PAO0hS9ZurU8A7SFL1m6tTwIQFg8rillbAOQbLrgt7V8A5BsuuC3tXwDkGy64Le1fAdILnkXskUMB0gueReyRQwHSC55F7JFDA6jI9UrduTMDjYVN2JDo1wDtIUvWbq1PAO0hS9ZurU8A7SFL1m6tTwIQFg8rillbAOQbLrgt7V8A5BsuuC3tXwDkGy64Le1fAVvMBIL6mQUDqMj1St25MwOoyPVK3bkzA6jI9UrduTMDjYVN2JDo1wDtIUvWbq1PAO0hS9ZurU8A7SFL1m6tTwIQFg8rillbAhAWDyuKWVsCEBYPK4pZWwMakKvpPnjLA",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_f64_rect3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "f64",
+   "channels": 1,
+   "width": 12,
+   "height": 12,
+   "input": "TpD1l7YLTsCry0HP1wVCQHOP4kDcY1XAVkZ64aV3V8Bkjf5rUTtIwKSmlIbR5h3Atj+BWONpUkBO5zI3h7dGQCT8E3VJRUhAes+PiHvNLcATwp3dINA+wDWRzrnQyjnAdsAnF+phWEAcuJozmv5WwLRkds4AWlJAqCVnoVx4L0BSwIf0x40owAWmcZqYhkZAeiPDzmZUBcCSWzxE0atSQNC6NN77CFRAbuE/78ZPL8BmLBlZNVFGwDyrGDpWeDJAQqT+NUCeVEBrsDNHDO9MwLIzpZrjlzhAOGPmHeJPOkDgiPKAsU9HQFFmZgLva1LAF/4QfR6VRUD394LDnXNUQGfvi2MOBFDAZ+LWEOQ+SsAwL7Rx25FXQOBMVnH95k/AyZzuEiG4UUDgQyLh+rX4v1hXSG7iRknAhAjIRpmJUkAApVrsveAlwNYK4iswtQdATjlvYUAnPMBxrGFmFZcyQFKabPnk0lDAo0AyFaDINcA4eT5MenhXQKxxRrzIL0jAacs5z+pYP0BgFCVlIntBwH7i+3npWEtAKVhFMNF0UsCcPruZtX1XQB4sRHLzeyLACiH0rhtlSsDSwrzbPVNVwLiT7ksZg1DAYmnByWijD0Bj86H7t0xAwOM1aQO1cVBANz+HGR6lK8AgxaYk6iBJwPbutsTSbTdAwBYoK3+tREDmMoET3aVQwLkGIVp5nlDAkyN3EZsqV8DjivU+5KNHQPc8K1plYUBA/CrSvZhLFMDvnSi6YTVRQDBhFOonkU5Aw/uauSQSMUA/Bv1U32lSQCVNwAt3ak3AsUyJym1nU8AclSryaAZHwCk/O8pJJVbAdPMc84TvGEAGt1KIjdRVQMn+/xVnCFfAZ3rYO/7kUsDY3f/K0R4jwF2wTaiZsVVAUGm1WWdiQsBoR95ZwSb3Pw/eMg7e61bAkjHE/zSVUcDX1T+W3VRYQGKMyfGEQVdAPjGkq8TAWMBRAsXbMJdWQFfTU9nw0jtA9y3gqlplUkDv7EmHoxoiwOyTWCAi9AhARCR403DYAcAWLyeZua9AQEfQtsR2BFLAFahrilaAV8AcqrRV/jRDwF5sv9jTd0RAN7lWN43QTcA+n4fL3ldBQMlb7crffldAQaxuIhJOVMBrufM9nUJBQJqdRUD6fybA3FoFijhoUkB0gueReyRQwDc5xXA5Q0NAX89dLuDnUEDz39bfDztWQBkNOEcmU0JAyKKu3N0U4r8uncVYx5E3QMZfZ9r7cVJAOgxtJHA+LEA5BsuuC3tXwAzReK8kjFVA2cT7g+LzQkBW8wEgvqZBQOoyPVK3bkzA0sSrou/GP0DjYVN2JDo1wEf8beAgPz5AO0hS9ZurU8CKcPv5rZE/QCDth+V++FhAhAWDyuKWVsBGTepd1NtXQMakKvpPnjLAaeLz56SJUkCYiiGCET1MQPEsbxJ3zipAmybdvEzYR0CR0ZDK/+xSQE7H3vkDLDPAL9ftePNLQcDIJvoCZMJAQOxmRCrbyE5Ab0D52386SkC6BneHB8hNQHoSjsBExCnA",
+   "expected": "dsAnF+phWEB2wCcX6mFYQHbAJxfqYVhAtGR2zgBaUkC2P4FY42lSQJJbPETRq1JA0Lo03vsIVED394LDnXNUQNC6NN77CFRA0Lo03vsIVEAwL7Rx25FXQDyrGDpWeDJAdsAnF+phWEB2wCcX6mFYQHbAJxfqYVhAhAjIRpmJUkC2P4FY42lSQPf3gsOdc1RA9/eCw51zVED394LDnXNUQDAvtHHbkVdAMC+0cduRV0AwL7Rx25FXQDAvtHHbkVdAdsAnF+phWEB2wCcX6mFYQHbAJxfqYVhAhAjIRpmJUkCcPruZtX1XQPf3gsOdc1RA9/eCw51zVED394LDnXNUQDAvtHHbkVdAMC+0cduRV0AwL7Rx25FXQDAvtHHbkVdAdsAnF+phWEBCpP41QJ5UQJw+u5m1fVdAnD67mbV9V0CcPruZtX1XQJw+u5m1fVdAnD67mbV9V0D394LDnXNUQDAvtHHbkVdAMC+0cduRV0AwL7Rx25FXQDAvtHHbkVdAQqT+NUCeVECECMhGmYlSQJw+u5m1fVdAnD67mbV9V0CcPruZtX1XQJw+u5m1fVdAnD67mbV9V0AGt1KIjdRVQDh5Pkx6eFdAOHk+THp4V0AwL7Rx25FXQDh5Pkx6eFdAPwb9VN9pUkA/Bv1U32lSQJw+u5m1fVdAnD67mbV9V0DX1T+W3VRYQJw+u5m1fVdAnD67mbV9V0BRAsXbMJdWQAa3UoiN1FVABrdSiI3UVUA4eT5MenhXQF2wTaiZsVVAPwb9VN9pUkA/Bv1U32lSQNfVP5bdVFhA19U/lt1UWEDX1T+W3VRYQNfVP5bdVFhA19U/lt1UWEBijMnxhEFXQMlb7crffldAUQLF2zCXVkBdsE2ombFVQF2wTaiZsVVAPwb9VN9pUkA/Bv1U32lSQNfVP5bdVFhA19U/lt1UWEDX1T+W3VRYQNfVP5bdVFhA19U/lt1UWEDJW+3K335XQMlb7crffldAyVvtyt9+V0DJW+3K335XQF2wTaiZsVVA3FoFijhoUkA/Bv1U32lSQNfVP5bdVFhA19U/lt1UWEDX1T+W3VRYQNfVP5bdVFhA19U/lt1UWEDJW+3K335XQCDth+V++FhAyVvtyt9+V0BGTepd1NtXQF2wTaiZsVVAaeLz56SJUkDcWgWKOGhSQPPf1t8PO1ZA89/W3w87VkDX1T+W3VRYQGKMyfGEQVdAIO2H5X74WEAg7YflfvhYQCDth+V++FhAIO2H5X74WEAg7YflfvhYQEZN6l3U21dAaeLz56SJUkBp4vPnpIlSQPPf1t8PO1ZA89/W3w87VkDz39bfDztWQPPf1t8PO1ZAIO2H5X74WEAg7YflfvhYQCDth+V++FhAIO2H5X74WEAg7YflfvhYQEZN6l3U21dAaeLz56SJUkBp4vPnpIlSQJHRkMr/7FJAkdGQyv/sUkDz39bfDztWQJHRkMr/7FJAIO2H5X74WEAg7YflfvhYQCDth+V++FhAIO2H5X74WEAg7YflfvhYQEZN6l3U21dA",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_f64_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 3,
+   "width": 12,
+   "height": 12,
+   "input": "srWXGMazxfRXoLAcPuqVmZtx1DDGUFNosJN1Vds+vGcwRgDfjN3Wsnq30j0fnRwwrNwdj6cSEQBNcq7xwfXbcHHdpbI+g4AHnDZmgh8JydJtoXvgVjbbH7GGXAdAOPZC19a6/vxHNfju5EIyYFvuB6EiX1dNH3ct6o/D86S11I3eNq/RBkkGoJZUkm98kiMcu1EBgC7Ekwrp/oHC1naLEwQkpf/diOE0q2Lz+VVrF1DJnXc67dZ/39BxctANCCfB7BhmyPUV6u0DmbkcbGHWJEpFkX9UKWMopSEQpJjleUtWdGlV1Bo4HoXap2EL7Pg0xomskJnU2715LT+B+zVqwDK0I3IZHJQKJwr/o3C6JufiNWE2bpf1lUQ3IPkj7pPS4vPqUL36bOrhyJnB9EjIJxCA2DyqZykYJiKC8eRrq7LdZWELEmQruvowvBBJODbwLgs9T9dSB96UUNbkdc/FxxjRWAuOOpnobBkuHwkPxpCWGdRV+YYNTnQGiHKvR/E61txR3t1zpuKRuulmEA2el+JruyxhgiSqp9m21msmDnfwA1zVmIzRoA/sqWt9wTbi",
+   "expected": "GHqXGD0fGBwcPhwcPhwSEQASEQASEQBNUFM+VWcwRgAHRgAHGB8JGB8JGBwJPhwcHxwSEQASEQASEQBAOFM+NWcwNQAHNQAHBx8JBx8JBxwJHxwdHxwSEQASEQASBgAGBkkGBkkGNSMHNSMHBx8BBwoBBwoJHwotEwQkEwQkEwQkBgcGBkkGBkkGFyMcFyMcBy4BBwoBBwoNCAoNCAQVEwQDEwQDBkkDBkkGBkkGFyMcFyMcgCEBcgoBCAoNCAoNCAQVEwQDEwQDbGEDJEocF0pFFz8oFz8opCEQIyENCCcKCAoKCAoKHgoDHmEDJmEDJEQcIEQjID8jID8jUCEQIyEQHDIKHAoKHAoKHgoLHhALJiILJiIYICIjID8LID8LEjIrEhAZHBAKHAoKHAoKBwo9BxAYByIYJhgYIAsjIAsLIAsLEgkPEgkPGQkPGQsNGQsGBwsGBxAGByIYJhgYJgtROgsLOgsLEAkPEAkPGQkPGQsNGQsGBwsGA1wGA1w6Aw86WAtROgtmOgtmEAkPEAkPGQkPGSQNGSQGDmsGA1wGA1w6Aw86mA9RoA9mpjZm",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "erode_rand3ch_rect3",
+   "suspect": false
+  },
+  {
+   "op": "dilate",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 3,
+   "width": 12,
+   "height": 12,
+   "input": "srWXGMazxfRXoLAcPuqVmZtx1DDGUFNosJN1Vds+vGcwRgDfjN3Wsnq30j0fnRwwrNwdj6cSEQBNcq7xwfXbcHHdpbI+g4AHnDZmgh8JydJtoXvgVjbbH7GGXAdAOPZC19a6/vxHNfju5EIyYFvuB6EiX1dNH3ct6o/D86S11I3eNq/RBkkGoJZUkm98kiMcu1EBgC7Ekwrp/oHC1naLEwQkpf/diOE0q2Lz+VVrF1DJnXc67dZ/39BxctANCCfB7BhmyPUV6u0DmbkcbGHWJEpFkX9UKWMopSEQpJjleUtWdGlV1Bo4HoXap2EL7Pg0xomskJnU2715LT+B+zVqwDK0I3IZHJQKJwr/o3C6JufiNWE2bpf1lUQ3IPkj7pPS4vPqUL36bOrhyJnB9EjIJxCA2DyqZykYJiKC8eRrq7LdZWELEmQruvowvBBJODbwLgs9T9dSB96UUNbkdc/FxxjRWAuOOpnobBkuHwkPxpCWGdRV+YYNTnQGiHKvR/E61txR3t1zpuKRuulmEA2el+JruyxhgiSqp9m21msmDnfwA1zVmIzRoA/sqWt9wTbi",
+   "expected": "0vTW0vTW0vTW0vTg1PTb1Orx1PXx1Pbx1/Xx/vzxwfju5Nvf0vTu0vTg0vTg0vTg6vTg8/bx1/bx/vzx/vzx/vzx/vzu/vzu0t3u0t3u6vTu/tzg8+rg8/bx8//x/vzx/vzz/vzx/vzu/vzu7d3u/tLu/tLu/tLp/v/p/v/g8//z/v/z/v/z/vzz/vzz/vzu7dbu/tbu/tbu/vXp/v/p/v/e8//z+f/z+f/z/vzz+fjz+ZbJ+9bu/tbp/tbp/vXp/v///v/d7P/z+f/z+f/1+fjz+fnz+b3U+/Pq+9b6++r//vX/9PX/7Pj/7P//7Pj17Pn1+fn17vn17vnU+/P6+/r6+/P/9Or/9Or/9Pj/9Pj/8fj18fn18fn18fn18fno+/r6+/r6+/r/9Pr/+er/9Of/9Of/8fj18fn18fn18fn18fno+/r64vr6+fr6+fr6+er/+fHw+fHw8fHk8fH18fHs8fno8eno4vrqxvr6+frw+frw+d7w+fHw+fHw3vHw3vHw8fHs3uns3unsxuKexvqq+eK2+eLw+dnw+fHw+fHw3vHw3vHw3vHs3uns3uns",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "dilate_rand3ch_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "erode",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 3,
+   "width": 12,
+   "height": 12,
+   "input": "srWXGMazxfRXoLAcPuqVmZtx1DDGUFNosJN1Vds+vGcwRgDfjN3Wsnq30j0fnRwwrNwdj6cSEQBNcq7xwfXbcHHdpbI+g4AHnDZmgh8JydJtoXvgVjbbH7GGXAdAOPZC19a6/vxHNfju5EIyYFvuB6EiX1dNH3ct6o/D86S11I3eNq/RBkkGoJZUkm98kiMcu1EBgC7Ekwrp/oHC1naLEwQkpf/diOE0q2Lz+VVrF1DJnXc67dZ/39BxctANCCfB7BhmyPUV6u0DmbkcbGHWJEpFkX9UKWMopSEQpJjleUtWdGlV1Bo4HoXap2EL7Pg0xomskJnU2715LT+B+zVqwDK0I3IZHJQKJwr/o3C6JufiNWE2bpf1lUQ3IPkj7pPS4vPqUL36bOrhyJnB9EjIJxCA2DyqZykYJiKC8eRrq7LdZWELEmQruvowvBBJODbwLgs9T9dSB96UUNbkdc/FxxjRWAuOOpnobBkuHwkPxpCWGdRV+YYNTnQGiHKvR/E61txR3t1zpuKRuulmEA2el+JruyxhgiSqp9m21msmDnfwA1zVmIzRoA/sqWt9wTbi",
+   "expected": "BwkLBwkLBwkLBwkLBwkLBwALBwALBwALBwkLBwkLBwAHBwAHBwkJGB8JGBwJPhwcHxwSEQASEQASEQBAOFM+NWcwNQAHBwAHBwkJBx8JBxwJHxwdHxwSEQASEQASBgAGBkkGBkkGNSMHBwkHBwkBBwoBBwoJHwotEwQkEwQkEwQkBgcGBkkGBkkGFyMcBwkLBwkBBwoBBwoNCAoNCAQVEwQDEwQDBkkDBkkGBkkGFyMcBwkLBwkBcgoBCAoNCAoNCAQVEwQDEwQDbGEDJEocF0pFFz8oBwkLBwkLIyENCCcKCAoKCAoKHgoDHmEDJmEDJEQcIEQjID8jBwkLBwkLIyEQHDIKHAoKHAoKHgoLHhALJiILJiIYICIjID8LBwkLBwkLEhAZHBAKHAoKHAoKBwo9BxAYByIYJhgYIAsjIAsLBwkLBwkLEgkPGQkPGQsNGQsGBwsGBxAGByIYJhgYJgtROgsLBwkLBwkLEAkPGQkPGQsNGQsGBwsGA1wGA1w6Aw86WAtROgtmBwkLBwkLBwkLBwkLBwkLBwkGBwkGAwkGAwkLAwkLBwkLBwkLBwkL",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": [
+    7.0,
+    9.0,
+    11.0,
+    0.0
+   ],
+   "name": "erode_rand3ch_rect3_const",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 2,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_open_mask24_rect3",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 2,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "XFxcDg4OARQlJSUlJSUUFFxcXBUVDgElJSUlMiUlFBRcFRUVFQ4NJSUyMjIyMhQOFRUVFRUODSUlMjIyMjIUDhURFRERDQ4iCDIyMjIyDg4REREHDiIiKysrKzIBDg4OPgMoDg4iIisrKysrDQ4XDj4+PigoIiIrKysrKxcXGxo+Pj4oKA4OIg4rDggbGxsbPj4+KCgODg4ODgQaJBsbGz4+PgsOHA4ODg4kJCQkJBs+IiIcHBwcHAAEJCQkJCQaLCwOLCkcHBwbDCQkJCQkGywsLCwsLCkcGwwdHSQdHRssLCwsLCwsGxsaHR0dHR0bLCwsLCwsLBsbGh0dHR0dAg==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_open_rand16a_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 3,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "////////////////////////////AAAA////////////////////////////AAAA////////////////////////////AAAA////////////////////////////AAAA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAD/////////////////AAAA/////wAAAAD/////////////////AAAA/////wAAAAD/////////////////AAAA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAP///////////////////////////wAAAP///////////////////////////wAAAP//////////////////////////////////////////////////////////////////",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_close_mask24_rect3",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 3,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "s7Ozs7O8vLzr69vWz8rKyrOzs7OzvLy86+vb1s/KysrLs7P867zr6+v+6//bz8/Ky8vL+fPz6/Pz+OP428/Pz8vLy/n5+fP54+Pj49vPz8/L+/z5+Pjs7OPj4+Pj/dvP+/v7+fjs7Ozj4+Pj4+vr6/v7+/v47Ozs7Ozj6+vr6+v78vLy8uzs7Onp6enp6+vr3eTi8uzy7Ozp6enp6fnr693d3eLi7Oz25unp6en5+fnd3d3i4uzm5ubm5vb++fn53d3d4uLs5ubgvebw8Pzy8t3k4ubs7OC9vb29veby6Ojk5uzs7PTgvb29vb29zOjo+fbs9PT04L29vb29vczo6A==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_close_rand16a_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 4,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "/////////////////////////////wAA/////////////////////////////wAA/////////////////////////////wAA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAP///////////////////wD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AP//////////////////////////////AP////////////////////////////////8A//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8A////////////////////////////////////////////////////////////////////////////////////////////////////",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_gradient_mask24_rect3",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 4,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "b6Wl7uq76urq6sbax8K7vLbu7u77++r9/eva2uvxzcG26+fu+/vy/f3a2trr8c3Buuvr9e/v+Pb29/fN/vHNwev59fX18vHx8fb3/vz8/O/5+fn59fLx8fHx4vz8/Pzv+fn5+fX06tfkwev8/Pz87/j4+fjt7ere3uTo5Or13t29+NPw7e3q6Ojo6PX18eLrvfDw8O3r6Oj28uX1+vHe39nn5+fn6/b29vb++vrk5N/P2dfn4ev29vb2/vra5OTi1tje4d7Y7Pbm9v764eTk4uvo3ubm2dno5uzk8OHh4frNzevKy9nZ6NSx2ubV+vDwzc3NysjZ2drGsaOyy/Dm5g==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_gradient_rand16a_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 5,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8AAAAAAAD//////////wD//wAA/wAA/wAAAAAAAP///wAA/wAA//8AAAAA//8A////AAAAAP8AAAAAAP8AAAD/////AAD/AAD/AAAAAP///wD/AP8A//8AAAD//wAAAAD/AAAAAAD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_tophat_mask24_rect3",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 5,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "ClcAAFw5uwBBVK2xJaVDYAcLO22AJgAyxngAT5qWAIxvJADn1kojtRXMd82pibsAqKiZqB1dKc4axlCyAFQAOpEAbkcqAOPXACcCTyEpYK21musAoACrJXgGPFEA73cnKwANzrBvtwB2npK4AFAYAImPmNPQmwWppMEmQx0Afr69fT3EAI4ACjItOAA8ZdBsmQBMyih5lJQSbADPwt4NAEiKCQCTBCHoiC+zAD6HQ7qcAJ7GSJKxZgAAtdLaaUIAXKIALQBfsJYjU8LMD9g7aLG4arrAYoEACACCKZbVOAAVfQARjMhZAABRDjYAoC1kzcovrLqRtGVdAKBbVq/LAA==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_tophat_rand16a_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 6,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "////AP//AP//////AAD/////////AAAA/wAAAP8A//8A/wAA/wAA//8A/wAAAAAA////AP8AAAAA////AAAAAP///wD/AAAAAAAA/wAAAAD///8A//8AAAD//wAAAAAA/wAA/wD///8A/////wD//wAAAAAA/wAA/wD/AAD//////wAA////AAD/AP//AP//AP///wD/AAD/AAD/////AAAA/////wD/AP8A/wAAAP//AAD/AP//AAD/AAD/////AAD//wD/AP8A/wAAAP////8AAP8A/wD/AP///wD//////wAAAAAAAP////8AAP8A/wD/AAAAAP//AAAAAAD/AP//AAAA//8A/wD/AAAAAAAA/wAAAAD///8A/wD//wD//wAAAAAA//////8AAAD///8AAAAA/wAA/wD//wD///8A//8A////AP8AAAAAAAD/AAD///8AAAAAAAAAAP8AAP//AP//AP//AAD//wAAAP//AP//AAD/////AAD/AAAAAAAAAAD//////wD///8AAAAA//8A//8AAAAAAAAAAP8A/wD/AAD///8AAP////8A/wAAAP8AAP8A/wD//wAAAAD/AP8A/////wAA////AP//AAD///8A/wAAAAAAAAD/AP8AAP8A//8A/wD///8A//8AAAAAAP//AAAA/wD///8A/wD/AAD/AAD//wAAAAAAAP//AP//AP///wD///////8A//8A/////wD//wD/////AAAA/wAAAP//AAD//wD/",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_blackhat_mask24_rect3",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 6,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "TQBXpUl1AKiFcgkAhQBzVlBMHDEeiLtlAE62VRAPtioAep4AAGS7EbEAQgAAFAC8Dg4dPMGItQC0AGEUqUm7hyW6SKG+7AIA24qvYoh0YRQFUADyStYfnECyfGDiAFaakvjGHTpbE8FCGiYA1o283TQuJQAAL8UYHQCSfbfUUhMAN3cGylDewKmRo+GSawBkBqZYAJxrSkrJb+UAAwDD0FcVltdBzL0AUKwSxYdOkiQDux0Afj4ZZObiDQAAbJPfVQ/PiblxGjSiXgAAvQCTbwAATAAAXjahmrEedywAk82jPcCvNABboqJSkmqgD55pAACRHA43AD1FowBFSgAA5g==",
+   "kernelRows": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_blackhat_rand16a_ellipse5",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "Y1wODg4BAQEUJSUlShQUFDkVDg4OAQEBFCUlJUoUDg45FRUVMgEBATolJSUyFA4OERERFQ0NDQgICDQyMhQODhERBwcHDQ0ICAgxAQEBFBQDAwMHBw0NCAgIMQEBAQ4OAwMDBwciIicrMTEBAQEODgMDAygoDg4OK0AICAgNDg4+Pj4oKA4ODiAEBAQIFxcbPj4LCwsODg4gBAQECCgbGyIiCwsLICAAAAAEBCQoGhoiDgsLCyAgAAAABCQkMxoaIg4ODikpHAAAAAQzMzMaGkEODg4pKRsbDAwMHR0dGxtBLCwsPYUbGwwMDB0dHQICQSwsLD2FGxsaGhodHR0CAg==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_erode_rand16a_rect3",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 16,
+   "height": 16,
+   "input": "ZrNcDmpHvBRmedLWSspXdGNnl4KVNAFX650lgb+7FKDLORX861gw2jr+qf/bu88Ovb2uvTJrNvM/+ILkMoYUSKYRg1g7DfH5CFk0gVNbbrvGq/wHriLNUKMxZ4MB/YU1aQM13L6R2Suhyb3jDV4vDsfN1vv4vSfUz+xRbjQXmdj7u3vsKJwOLEBYRghXgOuH1z6K8lCHoqIgegTp5vkoG4bIRwuhIC/2lj3XJGKrZ9XaIsDiZK7NggAE2fb+jWYaiM4OWSl7zLI+X+bwM/xfg93klubsjqocIwyfRrryVRtBqSw9uPSFGxtrK1MdvUp/+fZb2Oa94IB4Gr14c8zoAg==",
+   "expected": "s7Ozl5W8vOvr69bW1srKoMvL/Pz869rr/v7////bz8/Ly/z8/Ovz8/7+////28/Py8v8/Pzx+fn+/v///9vPz8b8/Py98fn5+fj45P39/bvG/Pz83PH5+fnJ4+P9/f27zfz8/Pv42dns7Ozj/f392Pv7+/v7+NnZ7Ozs4+Pr6+v7+/v7+/jU1Ozs7On5+fnr+/vy8vKi9vb21+np+fn569ra8vLyzfb29tn2/v7++dXa2uLi4s329vbm9v7+/vzV5OTm7Ozszc2y5vb+/v78g+Tk5uz09PTMsubw8Pz8/IP5+fbs9PT04IC9vb3y8vLo+fn25vT09OCAvb29zOjo6A==",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_dilate_rand16a_rect3",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 2,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 2,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_open_mask24_rect3_it2",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 4,
+   "dtype": "u8",
+   "channels": 3,
+   "width": 12,
+   "height": 12,
+   "input": "srWXGMazxfRXoLAcPuqVmZtx1DDGUFNosJN1Vds+vGcwRgDfjN3Wsnq30j0fnRwwrNwdj6cSEQBNcq7xwfXbcHHdpbI+g4AHnDZmgh8JydJtoXvgVjbbH7GGXAdAOPZC19a6/vxHNfju5EIyYFvuB6EiX1dNH3ct6o/D86S11I3eNq/RBkkGoJZUkm98kiMcu1EBgC7Ekwrp/oHC1naLEwQkpf/diOE0q2Lz+VVrF1DJnXc67dZ/39BxctANCCfB7BhmyPUV6u0DmbkcbGHWJEpFkX9UKWMopSEQpJjleUtWdGlV1Bo4HoXap2EL7Pg0xomskJnU2715LT+B+zVqwDK0I3IZHJQKJwr/o3C6JufiNWE2bpf1lUQ3IPkj7pPS4vPqUL36bOrhyJnB9EjIJxCA2DyqZykYJiKC8eRrq7LdZWELEmQruvowvBBJODbwLgs9T9dSB96UUNbkdc/FxxjRWAuOOpnobBkuHwkPxpCWGdRV+YYNTnQGiHKvR/E61txR3t1zpuKRuulmEA2el+JruyxhgiSqp9m21msmDnfwA1zVmIzRoA/sqWt9wTbi",
+   "expected": "mmM/ure3utiblNh5bs6Dw+q0w67fw/WkcaKzbI6tdtvYdrLYmr7NutXNutjXlNjEjc7Ow+rJw/bfxvaxxqmzyZW+yfznr/jnq77ly77ly7bXy8DD1MDO4tzM4vbf0fbr+LPr+LPoydnnr9XntILtwsjt98jg38i866284Pu64Pu60fjt+LPt+LPt59nSzdXS5qjt5szt98bc9sbc9vGu4Pvb4Pvb5Lbw85jt803t4nOthlytbbXke8zo9sbc9sbc9vHF2fva2fvagJ7w1a7X4nOu4n6sxH6hV7XV2LXY16nb5Mb15Ov1zuv8zpffxpfyyLTZu7XSzrqxzrqvq9Lq2NLqrLjw2OD12I/11t30zujXxtbqy9bd0dfS0brSzrrS6cjP6erhrOrw2OD12M317d3C0dfM0cXdy8zd0e7S0e7dzu7d0PHr0PHrr/Hr4N/j4Mzq8tPC0eHe0c/My9nMy9mMt97dgN7dqvGPtvGPrfHh4M7j4M7q8tPq05Xq05W22+KyhtebpN6Gh96Ch9mPttmPrdmb4LWp4LWw627q05Xq05W22+KyRtObPtqGG7N8",
+   "kernelRows": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_gradient_rand3ch_rect3",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 7,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAD/AAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -1,
+     1,
+     1
+    ],
+    [
+     -1,
+     -1,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_hitmiss_corner",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 7,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8A",
+   "kernelRows": [
+    [
+     -1,
+     -1,
+     -1
+    ],
+    [
+     -1,
+     1,
+     -1
+    ],
+    [
+     -1,
+     -1,
+     -1
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_hitmiss_isolated",
+   "suspect": false
+  },
+  {
+   "op": "morphologyEx",
+   "morphOp": 7,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 24,
+   "height": 24,
+   "input": "AAAA/wAA/wAAAAAA//8AAAAAAAAAAAAAAP///wD/AAD/AP//AP//AAD/AP//AAAAAAAA/wD/////AAAA/////wAAAP8AAAAA////AP////8AAAD/AAD///8AAP//AAAAAP//AP8AAAD/AAAAAP8AAP//////AP//AP8A//8AAAAAAP//AAAA//8A/wAA/wAA/wAAAP8A//8A//8AAAAA////AAAAAP8A/wD/AP///wAA//8A/wAA//8A//8AAAAA//8AAP8A/wD/AP///wAAAAD//wD/AP8A/wAAAP8AAAAAAAAAAAD//wAAAAD//wD/AP8AAAAA/wAA/wAAAAAA/wAA////AAD/AP8AAAAA////AAAAAAAAAAD/AP8AAP8AAP//AAAAAAAAAAD///8AAAD/////AP//AP8AAP8AAAD/AAD/AAAA/wD///////8A//8AAAD//////////wD//wAA/wAA/wAA//8AAP///wAA/wAA//8AAAAA//8A//////////8AAAAAAP8AAAD/////AAD/AAD//////////wD/AP8A//8AAAD//wAAAAD/AP///wD//wD/AP8AAP////8A/wD/AAAAAP//AAAA/wAA//8AAAD/AP///wAAAP8A/wD//wD/AAD/AP8AAAD/AAD//wAAAAAA////AP8AAAD/AP8A//8A//8AAAAAAP///wAA/wAA/wAAAP8AAAAAAAD/AAD/AAAAAP8AAP8AAAAA////AP///wAA//8AAP8A",
+   "expected": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAA",
+   "kernelRows": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   "anchor": null,
+   "iterations": 1,
+   "borderType": 0,
+   "borderValue": null,
+   "name": "ex_hitmiss_hitonly",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 0,
+   "ksize": [
+    1,
+    1
+   ],
+   "anchor": null,
+   "width": 1,
+   "height": 1,
+   "expected": "AQ==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_rect_1x1",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 0,
+   "ksize": [
+    3,
+    3
+   ],
+   "anchor": null,
+   "width": 3,
+   "height": 3,
+   "expected": "AQEBAQEBAQEB",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_rect_3x3",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 0,
+   "ksize": [
+    5,
+    5
+   ],
+   "anchor": null,
+   "width": 5,
+   "height": 5,
+   "expected": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_rect_5x5",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 0,
+   "ksize": [
+    7,
+    4
+   ],
+   "anchor": null,
+   "width": 7,
+   "height": 4,
+   "expected": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_rect_7x4",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 0,
+   "ksize": [
+    4,
+    7
+   ],
+   "anchor": null,
+   "width": 4,
+   "height": 7,
+   "expected": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_rect_4x7",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 0,
+   "ksize": [
+    6,
+    6
+   ],
+   "anchor": null,
+   "width": 6,
+   "height": 6,
+   "expected": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_rect_6x6",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 0,
+   "ksize": [
+    9,
+    9
+   ],
+   "anchor": null,
+   "width": 9,
+   "height": 9,
+   "expected": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_rect_9x9",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    1,
+    1
+   ],
+   "anchor": null,
+   "width": 1,
+   "height": 1,
+   "expected": "AQ==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_1x1",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    3,
+    3
+   ],
+   "anchor": null,
+   "width": 3,
+   "height": 3,
+   "expected": "AAEAAQEBAAEA",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_3x3",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    5,
+    5
+   ],
+   "anchor": null,
+   "width": 5,
+   "height": 5,
+   "expected": "AAABAAAAAAEAAAEBAQEBAAABAAAAAAEAAA==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_5x5",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    7,
+    4
+   ],
+   "anchor": null,
+   "width": 7,
+   "height": 4,
+   "expected": "AAAAAQAAAAAAAAEAAAABAQEBAQEBAAAAAQAAAA==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_7x4",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    4,
+    7
+   ],
+   "anchor": null,
+   "width": 4,
+   "height": 7,
+   "expected": "AAABAAAAAQAAAAEAAQEBAQAAAQAAAAEAAAABAA==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_4x7",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    6,
+    6
+   ],
+   "anchor": null,
+   "width": 6,
+   "height": 6,
+   "expected": "AAAAAQAAAAAAAQAAAAAAAQAAAQEBAQEBAAAAAQAAAAAAAQAA",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_6x6",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    9,
+    9
+   ],
+   "anchor": null,
+   "width": 9,
+   "height": 9,
+   "expected": "AAAAAAEAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAQEBAQEBAQEBAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAEAAAAA",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_9x9",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 2,
+   "ksize": [
+    1,
+    1
+   ],
+   "anchor": null,
+   "width": 1,
+   "height": 1,
+   "expected": "AQ==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_ellipse_1x1",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 2,
+   "ksize": [
+    3,
+    3
+   ],
+   "anchor": null,
+   "width": 3,
+   "height": 3,
+   "expected": "AAEAAQEBAAEA",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_ellipse_3x3",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 2,
+   "ksize": [
+    5,
+    5
+   ],
+   "anchor": null,
+   "width": 5,
+   "height": 5,
+   "expected": "AAABAAABAQEBAQEBAQEBAQEBAQEAAAEAAA==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_ellipse_5x5",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 2,
+   "ksize": [
+    7,
+    4
+   ],
+   "anchor": null,
+   "width": 7,
+   "height": 4,
+   "expected": "AAAAAQAAAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQ==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_ellipse_7x4",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 2,
+   "ksize": [
+    4,
+    7
+   ],
+   "anchor": null,
+   "width": 4,
+   "height": 7,
+   "expected": "AAABAAABAQEBAQEBAQEBAQEBAQEAAQEBAAABAA==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_ellipse_4x7",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 2,
+   "ksize": [
+    6,
+    6
+   ],
+   "anchor": null,
+   "width": 6,
+   "height": 6,
+   "expected": "AAAAAQAAAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAAEBAQEB",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_ellipse_6x6",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 2,
+   "ksize": [
+    9,
+    9
+   ],
+   "anchor": null,
+   "width": 9,
+   "height": 9,
+   "expected": "AAAAAAEAAAAAAAEBAQEBAQEAAAEBAQEBAQEAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAAEBAQEBAQEAAAEBAQEBAQEAAAAAAAEAAAAA",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_ellipse_9x9",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    5,
+    5
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "width": 5,
+   "height": 5,
+   "expected": "AQEBAQEBAAAAAAEAAAAAAQAAAAABAAAAAA==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_5x5_a00",
+   "suspect": false
+  },
+  {
+   "op": "getStructuringElement",
+   "shape": 1,
+   "ksize": [
+    5,
+    5
+   ],
+   "anchor": [
+    2,
+    1
+   ],
+   "width": 5,
+   "height": 5,
+   "expected": "AAABAAABAQEBAQAAAQAAAAABAAAAAAEAAA==",
+   "dtype": "u8",
+   "channels": 1,
+   "name": "elem_cross_5x5_a21",
+   "suspect": false
+  },
+  {
+   "op": "copyMakeBorder",
+   "dtype": "u8",
+   "channels": 1,
+   "width": 5,
+   "height": 4,
+   "input": "AAoUHigyPEZQWmRueIKMlqCqtL4=",
+   "expected": "BwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcAChQeKAcHBwcHMjxGUFoHBwcHB2RueIKMBwcHBweWoKq0vgcHBwcHBwcHBwcHBw==",
+   "top": 2,
+   "bottom": 1,
+   "left": 3,
+   "right": 2,
+   "borderType": 0,
+   "borderValue": [
+    7.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "name": "cmb_constant",
+   "suspect": false
+  },
+  {
+   "op": "copyMakeBorder",
+   "dtype": "u8",
+   "channels": 1,
+   "width": 5,
+   "height": 4,
+   "input": "AAoUHigyPEZQWmRueIKMlqCqtL4=",
+   "expected": "AAAAAAoUHigoKAAAAAAKFB4oKCgAAAAAChQeKCgoMjIyMjxGUFpaWmRkZGRueIKMjIyWlpaWoKq0vr6+lpaWlqCqtL6+vg==",
+   "top": 2,
+   "bottom": 1,
+   "left": 3,
+   "right": 2,
+   "borderType": 1,
+   "borderValue": null,
+   "name": "cmb_replicate",
+   "suspect": false
+  },
+  {
+   "op": "copyMakeBorder",
+   "dtype": "u8",
+   "channels": 1,
+   "width": 5,
+   "height": 4,
+   "input": "AAoUHigyPEZQWmRueIKMlqCqtL4=",
+   "expected": "RjwyMjxGUFpaUBQKAAAKFB4oKB4UCgAAChQeKCgeRjwyMjxGUFpaUHhuZGRueIKMjIKqoJaWoKq0vr60qqCWlqCqtL6+tA==",
+   "top": 2,
+   "bottom": 1,
+   "left": 3,
+   "right": 2,
+   "borderType": 2,
+   "borderValue": null,
+   "name": "cmb_reflect",
+   "suspect": false
+  },
+  {
+   "op": "copyMakeBorder",
+   "dtype": "u8",
+   "channels": 1,
+   "width": 5,
+   "height": 4,
+   "input": "AAoUHigyPEZQWmRueIKMlqCqtL4=",
+   "expected": "gnhuZG54goyCeFBGPDI8RlBaUEYeFAoAChQeKB4UUEY8MjxGUFpQRoJ4bmRueIKMgni0qqCWoKq0vrSqgnhuZG54goyCeA==",
+   "top": 2,
+   "bottom": 1,
+   "left": 3,
+   "right": 2,
+   "borderType": 4,
+   "borderValue": null,
+   "name": "cmb_reflect101",
+   "suspect": false
+  },
+  {
+   "op": "copyMakeBorder",
+   "dtype": "u8",
+   "channels": 1,
+   "width": 5,
+   "height": 4,
+   "input": "AAoUHigyPEZQWmRueIKMlqCqtL4=",
+   "expected": "eIKMZG54goxkbqq0vpagqrS+lqAUHigAChQeKAAKRlBaMjxGUFoyPHiCjGRueIKMZG6qtL6WoKq0vpagFB4oAAoUHigACg==",
+   "top": 2,
+   "bottom": 1,
+   "left": 3,
+   "right": 2,
+   "borderType": 3,
+   "borderValue": null,
+   "name": "cmb_wrap",
+   "suspect": false
+  },
+  {
+   "op": "copyMakeBorder",
+   "dtype": "u8",
+   "channels": 3,
+   "width": 5,
+   "height": 4,
+   "input": "srWXGMazxfRXoLAcPuqVjN3Wsnq30j0fnRwwrNwdnDZmgh8JydJtoXvgVjbbYFvuB6EiX1dNH3ct6o/D",
+   "expected": "BwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLsrWXGMazxfRXoLAcPuqVBwkLBwkLBwkLjN3Wsnq30j0fnRwwrNwdBwkLBwkLBwkLnDZmgh8JydJtoXvgVjbbBwkLBwkLBwkLYFvuB6EiX1dNH3ct6o/DBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkLBwkL",
+   "top": 1,
+   "bottom": 2,
+   "left": 2,
+   "right": 1,
+   "borderType": 0,
+   "borderValue": [
+    7.0,
+    9.0,
+    11.0,
+    0.0
+   ],
+   "name": "cmb_constant_3ch",
+   "suspect": false
+  },
+  {
+   "op": "copyMakeBorder",
+   "dtype": "u8",
+   "channels": 1,
+   "width": 1,
+   "height": 3,
+   "input": "Awkb",
+   "expected": "AwMDAwMDAwMDAwkJCQkJGxsbGxsbGxsbGw==",
+   "top": 1,
+   "bottom": 1,
+   "left": 2,
+   "right": 2,
+   "borderType": 2,
+   "borderValue": null,
+   "name": "cmb_reflect_thin",
+   "suspect": false
+  },
+  {
+   "op": "copyMakeBorder",
+   "dtype": "u8",
+   "channels": 1,
+   "width": 1,
+   "height": 3,
+   "input": "Awkb",
+   "expected": "CQkJCQkDAwMDAwkJCQkJGxsbGxsJCQkJCQ==",
+   "top": 1,
+   "bottom": 1,
+   "left": 2,
+   "right": 2,
+   "borderType": 4,
+   "borderValue": null,
+   "name": "cmb_reflect101_thin",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 10,
+   "borderType": 1,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p-1_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -5,
+   "len": 10,
+   "borderType": 1,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p-5_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -13,
+   "len": 10,
+   "borderType": 1,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p-13_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 0,
+   "len": 10,
+   "borderType": 1,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p0_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 9,
+   "len": 10,
+   "borderType": 1,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p9_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 10,
+   "len": 10,
+   "borderType": 1,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p10_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 14,
+   "len": 10,
+   "borderType": 1,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p14_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 25,
+   "len": 10,
+   "borderType": 1,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p25_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 1,
+   "borderType": 1,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p-1_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 3,
+   "len": 1,
+   "borderType": 1,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p3_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -7,
+   "len": 3,
+   "borderType": 1,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p-7_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 8,
+   "len": 3,
+   "borderType": 1,
+   "expectedInt": 2,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_replicate_p8_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 10,
+   "borderType": 2,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p-1_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -5,
+   "len": 10,
+   "borderType": 2,
+   "expectedInt": 4,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p-5_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -13,
+   "len": 10,
+   "borderType": 2,
+   "expectedInt": 7,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p-13_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 0,
+   "len": 10,
+   "borderType": 2,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p0_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 9,
+   "len": 10,
+   "borderType": 2,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p9_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 10,
+   "len": 10,
+   "borderType": 2,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p10_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 14,
+   "len": 10,
+   "borderType": 2,
+   "expectedInt": 5,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p14_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 25,
+   "len": 10,
+   "borderType": 2,
+   "expectedInt": 5,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p25_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 1,
+   "borderType": 2,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p-1_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 3,
+   "len": 1,
+   "borderType": 2,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p3_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -7,
+   "len": 3,
+   "borderType": 2,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p-7_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 8,
+   "len": 3,
+   "borderType": 2,
+   "expectedInt": 2,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect_p8_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 10,
+   "borderType": 4,
+   "expectedInt": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p-1_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -5,
+   "len": 10,
+   "borderType": 4,
+   "expectedInt": 5,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p-5_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -13,
+   "len": 10,
+   "borderType": 4,
+   "expectedInt": 5,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p-13_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 0,
+   "len": 10,
+   "borderType": 4,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p0_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 9,
+   "len": 10,
+   "borderType": 4,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p9_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 10,
+   "len": 10,
+   "borderType": 4,
+   "expectedInt": 8,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p10_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 14,
+   "len": 10,
+   "borderType": 4,
+   "expectedInt": 4,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p14_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 25,
+   "len": 10,
+   "borderType": 4,
+   "expectedInt": 7,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p25_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 1,
+   "borderType": 4,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p-1_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 3,
+   "len": 1,
+   "borderType": 4,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p3_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -7,
+   "len": 3,
+   "borderType": 4,
+   "expectedInt": 1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p-7_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 8,
+   "len": 3,
+   "borderType": 4,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_reflect101_p8_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 10,
+   "borderType": 3,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p-1_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -5,
+   "len": 10,
+   "borderType": 3,
+   "expectedInt": 5,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p-5_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -13,
+   "len": 10,
+   "borderType": 3,
+   "expectedInt": 7,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p-13_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 0,
+   "len": 10,
+   "borderType": 3,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p0_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 9,
+   "len": 10,
+   "borderType": 3,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p9_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 10,
+   "len": 10,
+   "borderType": 3,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p10_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 14,
+   "len": 10,
+   "borderType": 3,
+   "expectedInt": 4,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p14_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 25,
+   "len": 10,
+   "borderType": 3,
+   "expectedInt": 5,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p25_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 1,
+   "borderType": 3,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p-1_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 3,
+   "len": 1,
+   "borderType": 3,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p3_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -7,
+   "len": 3,
+   "borderType": 3,
+   "expectedInt": 2,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p-7_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 8,
+   "len": 3,
+   "borderType": 3,
+   "expectedInt": 2,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_wrap_p8_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 10,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p-1_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -5,
+   "len": 10,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p-5_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -13,
+   "len": 10,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p-13_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 0,
+   "len": 10,
+   "borderType": 0,
+   "expectedInt": 0,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p0_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 9,
+   "len": 10,
+   "borderType": 0,
+   "expectedInt": 9,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p9_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 10,
+   "len": 10,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p10_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 14,
+   "len": 10,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p14_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 25,
+   "len": 10,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p25_l10",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -1,
+   "len": 1,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p-1_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 3,
+   "len": 1,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p3_l1",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": -7,
+   "len": 3,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p-7_l3",
+   "suspect": false
+  },
+  {
+   "op": "borderInterpolate",
+   "p": 8,
+   "len": 3,
+   "borderType": 0,
+   "expectedInt": -1,
+   "dtype": "u8",
+   "channels": 1,
+   "width": 0,
+   "height": 0,
+   "name": "bi_constant_p8_l3",
+   "suspect": false
+  }
+ ]
+}

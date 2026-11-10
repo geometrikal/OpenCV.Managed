@@ -1,0 +1,5 @@
+results/*.log
+BenchmarkDotNet.Artifacts-mt/
+BenchmarkDotNet.Artifacts-t*/
+BenchmarkDotNet.Artifacts-v512/
+BenchmarkDotNet.Artifacts-mt-v512/

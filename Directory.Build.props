@@ -1,0 +1,18 @@
+<Project>
+
+  <PropertyGroup>
+    <Authors>ross.marchant@infarm.io</Authors>
+    <Copyright>Copyright 2026 Ross Marchant (ross.marchant@infarm.io). Portions copyright the OpenCV authors.</Copyright>
+    <RepositoryUrl>https://github.com/geometrikal/OpenCV.Managed</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/geometrikal/OpenCV.Managed</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+</Project>

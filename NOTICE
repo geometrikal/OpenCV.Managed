@@ -1,0 +1,331 @@
+Geometrikal.OpenCV.Managed
+Copyright 2026 Ross Marchant (ross.marchant@infarm.io)
+
+This product includes software developed by Ross Marchant.
+
+Licensed under the Apache License, Version 2.0 (see the LICENSE file in the
+root of this repository).
+
+--------------------------------------------------------------------------
+
+Portions of this software are derived from OpenCV
+(https://github.com/opencv/opencv), included in this repository as a git
+submodule at src/OpenCV and licensed under the Apache License, Version 2.0.
+
+In particular, the managed contour-detection implementation under
+src/Geometrikal.OpenCV.Managed/ImgProc/Contours/ is a C# port of
+the OpenCV implementation in:
+
+  - modules/imgproc/src/contours_new.cpp
+  - modules/imgproc/src/contours_common.hpp / contours_common.cpp
+  - modules/imgproc/src/contours_approx.cpp
+
+and the managed drawing implementation under
+src/Geometrikal.OpenCV.Managed/ImgProc/Drawing/ is a C# port of
+the OpenCV implementation in:
+
+  - modules/imgproc/src/drawing.cpp
+
+and the managed morphology and border implementation under
+src/Geometrikal.OpenCV.Managed/ImgProc/Morphology/ and
+src/Geometrikal.OpenCV.Managed/Core/Borders.cs is a C# port of
+the OpenCV implementation in:
+
+  - modules/imgproc/src/morph.dispatch.cpp
+  - modules/imgproc/src/morph.simd.hpp
+  - modules/core/src/copy.cpp (borderInterpolate, copyMakeBorder, scalarToRawData)
+
+and the managed filtering implementation under
+src/Geometrikal.OpenCV.Managed/ImgProc/Filtering/ is a C# port of
+the OpenCV implementation in:
+
+  - modules/imgproc/src/filter.dispatch.cpp / filter.simd.hpp
+  - modules/imgproc/src/box_filter.dispatch.cpp / box_filter.simd.hpp
+  - modules/imgproc/src/smooth.dispatch.cpp / smooth.simd.hpp
+  - modules/imgproc/src/median_blur.dispatch.cpp / median_blur.simd.hpp
+  - modules/imgproc/src/fixedpoint.inl.hpp
+  - modules/imgproc/src/deriv.cpp
+  - modules/core/src/softfloat.cpp (f64_exp; the median histogram code also
+    incorporates the constant-time median filtering idea contributed to
+    OpenCV by Simon Perreault)
+
+and the managed core operations under
+src/Geometrikal.OpenCV.Managed/Core/ (Arithmetic, Bitwise,
+Comparison, Conversions, Reductions and Mat masking) are a C# port of the
+OpenCV implementation in:
+
+  - modules/core/src/arithm.cpp / arithm.simd.hpp
+  - modules/core/src/copy.cpp (copyTo, setTo, convertAndUnrollScalar)
+  - modules/core/src/convert.dispatch.cpp / convert.simd.hpp
+  - modules/core/src/convert_scale.dispatch.cpp / convert_scale.simd.hpp
+  - modules/core/src/split.dispatch.cpp, merge.dispatch.cpp, lut.cpp
+  - modules/core/src/sum.dispatch.cpp, mean.dispatch.cpp, minmax.dispatch.cpp,
+    count_non_zero.dispatch.cpp, norm.dispatch.cpp / norm.simd.hpp
+  - modules/core/src/matrix_operations.cpp (reduce), matmul.dispatch.cpp
+    (scaleAdd)
+  - modules/geometry/src/geometry.cpp (intersectConvexConvex), intersection.cpp
+    (rotatedRectangleIntersection)
+  - modules/photo/src/denoising.cpp, fast_nlmeans_denoising_invoker.hpp,
+    fast_nlmeans_denoising_invoker_commons.hpp (fastNlMeansDenoising)
+  - modules/core/src/dxt.cpp (divSpectrums); modules/imgproc/src/blend.cpp (blendLinear)
+  - modules/photo/src/inpaint.cpp (inpaint)
+  - modules/imgproc/src/demosaicing.cpp (demosaicing: bilinear, VNG, edge-aware)
+  - modules/imgproc/src/accum.cpp, accum.simd.hpp (accumulate, accumulateSquare,
+    accumulateProduct, accumulateWeighted)
+  - modules/imgproc/src/imgwarp.cpp (warpPolar)
+  - modules/imgproc/src/hough.cpp (HoughLines, HoughLinesP, HoughLinesPointSet,
+    HoughCircles HOUGH_GRADIENT)
+  - modules/core/src/mathfuncs.cpp (magnitude, phase, cartToPolar, polarToCart,
+    exp, log, pow, sqrt) and mathfuncs_core.simd.hpp; hal/intrin_math.hpp
+    (v_sincos_default_32f) and hal/intrin_sse.hpp (v_invsqrt)
+
+and the managed colour conversion implementation under
+src/Geometrikal.OpenCV.Managed/ImgProc/Color/ is a C# port of the
+OpenCV implementation in:
+
+  - modules/imgproc/src/color.cpp, color.hpp, color.simd_helpers.hpp
+  - modules/imgproc/src/color_rgb.simd.hpp, color_hsv.simd.hpp,
+    color_yuv.simd.hpp
+  - modules/imgproc/src/color_lab.cpp
+  - modules/core/src/softfloat.cpp (f32_cbrt) and mathfuncs.cpp (cubeRoot)
+
+and the managed thresholding implementation under
+src/Geometrikal.OpenCV.Managed/ImgProc/Threshold/ is a C# port of
+the OpenCV implementation in:
+
+  - modules/imgproc/src/thresh.cpp
+  - modules/core/include/opencv2/core/fast_math.hpp (cvFloor, cvCeil)
+
+and the managed geometric transforms under
+src/Geometrikal.OpenCV.Managed/ImgProc/Geometry/ and
+src/Geometrikal.OpenCV.Managed/Core/MatrixTransforms.cs are a C#
+port of the OpenCV implementation in:
+
+  - modules/imgproc/src/resize.cpp, imgwarp.cpp, fixedpoint.inl.hpp
+  - modules/imgproc/src/imgwarp.cpp of OpenCV 4.5.5 (remapBicubic, bicubic
+    table)
+  - modules/geometry/src/geometry.cpp
+  - modules/core/src/matrix_transform.cpp
+  - modules/core/src/lapack.cpp (JacobiSVDImpl_), matrix_decomp.cpp
+    (LUImpl), matmul.simd.hpp (MulTransposedR)
+
+and the managed connected components labeling under
+src/Geometrikal.OpenCV.Managed/ImgProc/ConnectedComponents/ is a
+C# port of the OpenCV implementation in:
+
+  - modules/imgproc/src/connectedcomponents.cpp
+
+and the managed spectral transforms under
+src/Geometrikal.OpenCV.Managed/Core/ (SpectralTransforms) are a C#
+port of the OpenCV implementation in:
+
+  - modules/core/src/dxt.cpp (dft, idft, dct, idct, mulSpectrums,
+    getOptimalDFTSize)
+
+and the managed edge detection under
+src/Geometrikal.OpenCV.Managed/ImgProc/EdgeDetection/ is a C# port
+of the OpenCV implementation in:
+
+  - modules/imgproc/src/canny.cpp
+  - modules/imgproc/src/spatialgradient.cpp
+
+and the managed distance transform and watershed under
+src/Geometrikal.OpenCV.Managed/ImgProc/Distance/ and
+src/Geometrikal.OpenCV.Managed/ImgProc/Segmentation/ are a C# port
+of the OpenCV implementation in:
+
+  - modules/imgproc/src/distransform.cpp (including distanceATS_L1_8u,
+    (C) 2006 Jay Stavinzky; the 8-bit L1 path computes the same result
+    with a separable equivalent)
+  - modules/imgproc/src/segmentation.cpp (watershed)
+
+and the managed advanced filters under
+src/Geometrikal.OpenCV.Managed/ImgProc/Filtering/ (CrossCorrEngine,
+BilateralEngine, StackBlurEngine, sqrBoxFilter) are a C# port of the OpenCV
+implementation in:
+
+  - modules/imgproc/src/filter.dispatch.cpp (dftFilter2D)
+  - modules/imgproc/src/templmatch.cpp (crossCorr)
+  - modules/imgproc/src/bilateral_filter.dispatch.cpp, bilateral_filter.simd.hpp
+  - modules/imgproc/src/stackblur.cpp
+  - modules/imgproc/src/box_filter.simd.hpp (sqrBoxFilter)
+  - modules/core/include/opencv2/core/hal/intrin_math.hpp (v_exp)
+
+and the managed guided filter (GuidedFilter, GuidedFilterEngine) is a C# port
+of the opencv_contrib implementation (https://github.com/opencv/opencv_contrib,
+Apache License 2.0) in:
+
+  - modules/ximgproc/src/guided_filter.cpp
+  - modules/ximgproc/src/edgeaware_filters_common.cpp
+
+and the managed histograms, CLAHE, integral images and normalize under
+src/Geometrikal.OpenCV.Managed/ImgProc/Histograms/ and
+src/Geometrikal.OpenCV.Managed/Core/ (IntegralImages,
+Conversions.Normalize) are a C# port of the OpenCV implementation in:
+
+  - modules/imgproc/src/histogram.cpp
+  - modules/imgproc/src/clahe.cpp
+  - modules/imgproc/src/sumpixels.dispatch.cpp, sumpixels.simd.hpp
+  - modules/core/src/norm.dispatch.cpp (normalize)
+
+and the managed shape descriptors under
+src/Geometrikal.OpenCV.Managed/ImgProc/Shapes/ (ShapeDescriptors)
+are a C# port of the OpenCV implementation in:
+
+  - modules/geometry/src/approx.cpp
+  - modules/geometry/src/shapedescr.cpp (arcLength, contourArea, boundingRect)
+  - modules/geometry/src/moments.cpp
+  - modules/geometry/src/matchcontours.cpp
+
+and the managed shape fitting under
+src/Geometrikal.OpenCV.Managed/ImgProc/Shapes/ (ShapeFitting) and
+Core/ (RotatedRect, Core/Internal/CvRng) is a C# port of the OpenCV
+implementation in:
+
+  - modules/geometry/src/convhull.cpp, rotcalipers.cpp, shapedescr.cpp,
+    linefit.cpp, geometry.cpp
+  - modules/core/src/lda.cpp (EigenvalueDecomposition)
+  - modules/core/src/lapack.cpp (SVBkSb, JacobiSVD), matrix_decomp.cpp
+  - modules/core/src/types.cpp (RotatedRect::points)
+  - modules/core/src/rand.cpp, modules/core/include/opencv2/core/operations.hpp (RNG)
+
+and the managed linear algebra under
+src/Geometrikal.OpenCV.Managed/Core/ (LinearAlgebra, Svd) is a C#
+port of the OpenCV implementation in:
+
+  - modules/core/src/lapack.cpp, matrix_decomp.cpp, hal_internal.cpp
+  - modules/core/src/matmul.simd.hpp (gemmImpl, transform, perspectiveTransform,
+    mulTransposed)
+  - modules/core/src/mathfuncs.cpp (solveCubic, solvePoly)
+  - modules/core/src/matrix_operations.cpp (setIdentity, trace, completeSymm)
+  - 3rdparty/clapack/src/sgemm.c, dgemm.c (element order)
+
+and the managed image pyramids and keypoint types under
+src/Geometrikal.OpenCV.Managed/ImgProc/Pyramids/,
+Core/ (KeyPoint, DMatch) and Features/ (KeyPointsFilter) are a C# port of the
+OpenCV implementation in:
+
+  - modules/imgproc/src/pyramids.cpp
+  - modules/core/src/types.cpp (KeyPoint::convert, KeyPoint::overlap)
+  - modules/features/src/keypoint.cpp
+
+and the managed feature detectors, descriptors and matchers under
+src/Geometrikal.OpenCV.Managed/Features/ (Fast, Orb, Sift, BFMatcher),
+ImgProc/Corners/, Core/TermCriteria and Core/Internal/FastMath are a C# port of
+the OpenCV implementation in:
+
+  - modules/features/src/fast.cpp, fast_score.cpp, orb.cpp, feature2d.cpp,
+    sift.dispatch.cpp, sift.simd.hpp, matchers.cpp, featureselect.cpp
+  - modules/features/include/opencv2/features.hpp
+  - modules/core/src/batch_distance.cpp, norm.dispatch.cpp, stat.simd.hpp
+  - modules/core/src/mathfuncs_core.simd.hpp, mathfuncs_core.dispatch.cpp
+  - modules/core/include/opencv2/core/operations.hpp (RNG, Matx_FastSolveOp),
+    matx.inl.hpp (Matx_DetOp), types.hpp (TermCriteria), base.hpp,
+    hal/intrin_sse.hpp
+  - modules/imgproc/src/corner.cpp, cornersubpix.cpp, samplers.cpp
+
+and Core/Internal/MsvcSort reproduces the element order of std::sort from the
+Microsoft C++ Standard Library (https://github.com/microsoft/STL, Apache License
+2.0 with LLVM exception), <algorithm>.
+
+and the managed geometric estimation, undistortion and camera model under
+src/Geometrikal.OpenCV.Managed/Calib/ are a C# port of the OpenCV
+implementation in:
+
+  - modules/geometry/src/ptsetreg.cpp, fundam.cpp, levmarq.cpp, rho.cpp, rho.h,
+    precomp.hpp, pinhole.cpp, calibration_base.cpp, distortion_model.hpp,
+    solvepnp.cpp
+  - modules/geometry/include/opencv2/geometry/3d.hpp
+  - modules/imgproc/src/undistort.dispatch.cpp, undistort.simd.hpp
+  - modules/core/src/norm.simd.hpp, sum.simd.hpp, matmul.simd.hpp (dotProd,
+    MulTransposedR), modules/core/include/opencv2/core/matx.inl.hpp
+
+and the managed template matching, phase correlation and ECC alignment under
+src/Geometrikal.OpenCV.Managed/ImgProc/Alignment/ are a C# port of
+the OpenCV implementation in:
+
+  - modules/imgproc/src/templmatch.cpp, phasecorr.cpp, phasecorr_iterative.cpp
+  - modules/video/src/ecc.cpp
+  - modules/imgproc/src/warp_kernels.simd.hpp, warp_common.scalar.hpp,
+    warp_common.vector.hpp
+  - modules/core/src/dxt.cpp (divSpectrums), mean.dispatch.cpp, mean.simd.hpp,
+    matrix_expressions.cpp
+  - modules/core/include/opencv2/core/hal/intrin_math.hpp (v_sincos_default_64f)
+
+and the managed stitching pipeline under
+src/Geometrikal.OpenCV.Managed/Stitching/ (warpers, blenders,
+exposure compensators, seam finders, matchers, motion estimators, bundle
+adjusters, wave correction, Stitcher) is a C# port of the OpenCV implementation
+in:
+
+  - modules/stitching/src/warpers.cpp, blenders.cpp, exposure_compensate.cpp,
+    seam_finders.cpp, matchers.cpp, motion_estimators.cpp, autocalib.cpp,
+    camera.cpp, util.cpp, stitcher.cpp
+  - modules/stitching/include/opencv2/stitching.hpp,
+    stitching/warpers.hpp, stitching/detail/warpers.hpp, warpers_inl.hpp,
+    blenders.hpp, exposure_compensate.hpp, seam_finders.hpp, matchers.hpp,
+    motion_estimators.hpp, autocalib.hpp, camera.hpp, util.hpp, util_inl.hpp
+  - modules/geometry/include/opencv2/geometry/detail/gcgraph.hpp (GCGraph)
+  - modules/core/include/opencv2/core/operations.hpp (partition)
+  - modules/core/src/matrix_operations.cpp (Mat::cross), convert_scale.simd.hpp
+
+and Stitching/Internal/SeamPairSort reproduces the element order of std::sort from
+the Microsoft C++ Standard Library (Apache License 2.0 with LLVM exception).
+
+and the managed sparse optical flow under
+src/Geometrikal.OpenCV.Managed/Video/ is a C# port of the OpenCV
+implementation in:
+
+  - modules/video/src/lkpyramid.cpp, lkpyramid.hpp, lkpyramid.simd.hpp
+  - modules/video/include/opencv2/video/tracking.hpp
+  - modules/core/src/copy.cpp (copyMakeBorder submatrix rule), matrix.cpp
+    (Mat::locateROI)
+
+and the managed anti-aliased drawing under
+src/Geometrikal.OpenCV.Managed/ImgProc/Drawing/ (AntiAliasedLine,
+ArrowedLine, DrawMarker, TextMetrics) is a C# port of the OpenCV implementation in:
+
+  - modules/imgproc/src/drawing.cpp (LineAA, SlopeCorrTable, FilterTable, AA
+    polygon fill, ThickLine, arrowedLine, drawMarker)
+  - modules/imgproc/src/drawing_text.cpp (hersheyToTruetype size mapping,
+    getFontScaleFromHeight)
+
+and the managed PnP solvers and two-view geometry under
+src/Geometrikal.OpenCV.Managed/Calib/ (PnP, EpipolarGeometry) are a C#
+port of the OpenCV implementation in:
+
+  - modules/geometry/src/solvepnp.cpp, epnp.cpp, epnp.h, p3p.cpp, p3p.h,
+    ap3p.cpp, ap3p.h, polynom_solver.cpp, polynom_solver.h, ippe.cpp, ippe.hpp
+  - modules/geometry/src/sqpnp.cpp, sqpnp.hpp (SQPnP, BSD 3-Clause License,
+    Copyright (c) 2020 George Terzakis)
+  - P3P after Ding et al. 2023 as included in OpenCV from PoseLib (Viktor Larsson)
+  - modules/geometry/src/fundam.cpp, five-point.cpp, triangulate.cpp
+
+and the managed flood fill under
+src/Geometrikal.OpenCV.Managed/ImgProc/Segmentation/ (FloodFilling)
+is a C# port of the OpenCV implementation in:
+
+  - modules/imgproc/src/floodfill.cpp
+
+The ported files carry attribution headers identifying their original
+sources. The port translates the algorithms to managed C#; behavioural
+changes, where deliberate, are documented in the ported files and their
+tests.
+
+OpenCV copyright notices (from the OpenCV COPYRIGHT file):
+
+  Copyright (C) 2000-2022, Intel Corporation, all rights reserved.
+  Copyright (C) 2009-2011, Willow Garage Inc., all rights reserved.
+  Copyright (C) 2009-2016, NVIDIA Corporation, all rights reserved.
+  Copyright (C) 2010-2013, Advanced Micro Devices, Inc., all rights reserved.
+  Copyright (C) 2015-2023, OpenCV Foundation, all rights reserved.
+  Copyright (C) 2008-2016, Itseez Inc., all rights reserved.
+  Copyright (C) 2019-2023, Xperience AI, all rights reserved.
+  Copyright (C) 2019-2022, Shenzhen Institute of Artificial Intelligence and
+  Robotics for Society, all rights reserved.
+  Copyright (C) 2022-2023, Southern University of Science And Technology,
+  all rights reserved.
+  Copyright (C) 2023-2025, OpenCV AI, all rights reserved.
+  Copyright (C) 2024, Bigvision LLC, all rights reserved.
+
+  Third party copyrights are property of their respective owners.
