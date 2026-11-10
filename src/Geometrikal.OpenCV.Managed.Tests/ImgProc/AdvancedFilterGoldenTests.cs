@@ -111,7 +111,8 @@ public sealed class AdvancedFilterGoldenTests
         ReadOnlySpan<float> a = MemoryMarshal.Cast<byte, float>(actual);
         for (int i = 0; i < e.Length; i++)
         {
-            Assert.True(Math.Abs(e[i] - a[i]) <= 0.5 + (1e-3 * Math.Abs(e[i])), $"{name}[{i}]: {e[i]} vs {a[i]}");
+            bool bothNaN = float.IsNaN(e[i]) && float.IsNaN(a[i]);
+            Assert.True(bothNaN || Math.Abs(e[i] - a[i]) <= 0.5 + (1e-3 * Math.Abs(e[i])), $"{name}[{i}]: {e[i]} vs {a[i]}");
         }
     }
 

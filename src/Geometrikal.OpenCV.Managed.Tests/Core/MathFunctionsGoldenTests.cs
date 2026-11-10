@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics.X86;
 using System.Text.Json;
 using Geometrikal.OpenCV.Managed.Core;
 
@@ -55,6 +56,11 @@ public sealed class MathFunctionsGoldenTests
             byte[] expected = Convert.FromBase64String(c.Outputs[k].Data);
             if (!expected.AsSpan().SequenceEqual(actual[k]))
             {
+                if (UsesRsqrtEstimate(c) && !RsqrtMatchesGolden && WithinUlps(expected, actual[k], MaxRsqrtUlps))
+                {
+                    continue;
+                }
+
                 int i = 0;
                 while (expected[i] == actual[k][i])
                 {
@@ -105,6 +111,37 @@ public sealed class MathFunctionsGoldenTests
             "pow" => [Bytes(MathFunctions.Pow(In(0)!, c.Params["power"].GetDouble()))],
             _ => throw new InvalidOperationException(c.Op),
         };
+    }
+
+    // The goldens come from an Intel CPU, and AMD CPUs implement the RSQRTSS estimate table differently.
+    private static readonly bool RsqrtMatchesGolden = !X86Base.IsSupported || IsIntel();
+
+    // One Newton step after a different RSQRTSS estimate moves the float32 result by at most a few units in the last place.
+    private const int MaxRsqrtUlps = 2;
+
+    private static bool UsesRsqrtEstimate(GoldenCase c) =>
+        c.Op == "pow" && c.Inputs[0]?.Dtype == "f32" && c.Params["power"].GetDouble() == -0.5;
+
+    private static bool IsIntel()
+    {
+        (_, int ebx, int ecx, int edx) = X86Base.CpuId(0, 0);
+        Span<int> vendor = [ebx, edx, ecx];
+        return System.Text.Encoding.ASCII.GetString(MemoryMarshal.AsBytes(vendor)) == "GenuineIntel";
+    }
+
+    private static bool WithinUlps(byte[] expected, byte[] actual, int maxUlps)
+    {
+        ReadOnlySpan<int> e = MemoryMarshal.Cast<byte, int>(expected);
+        ReadOnlySpan<int> a = MemoryMarshal.Cast<byte, int>(actual);
+        for (int i = 0; i < e.Length; i++)
+        {
+            if (Math.Abs((long)e[i] - a[i]) > maxUlps)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     internal static GoldenCase Find(string name) => Cases.Single(c => c.Name == name);
